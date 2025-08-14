@@ -1,3 +1,12 @@
-import Header from "@/components/header";
+import React from "react";
+import Hero from "../components/home/hero";
+import Solutions from "../components/home/unique-challenges";
 
-export default function Home() {}
+export default function Home() {
+  return (
+    <>
+      <Hero />
+      <Solutions />
+    </>
+  );
+}

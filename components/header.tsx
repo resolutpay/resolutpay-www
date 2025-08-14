@@ -7,7 +7,6 @@ import { useEffect, useRef, useState } from "react";
 import { LogIn, Menu } from "lucide-react";
 import { Button } from "./ui/button";
 import resolutLogo from "../public/assets/resolut.svg";
-import standardImage from "../public/assets/pci-insight.svg";
 import { navItems } from "@/lib/constants";
 import WidthConstraint from "./width-constraint";
 import Image from "next/image";
@@ -90,39 +89,6 @@ const NavBar = () => {
   );
 };
 
-// HERO SECTION
-const Hero = () => {
-  return (
-    <WidthConstraint>
-      <section
-        role="banner"
-        className=" lg:w-5/6 mx-auto sm:text-center flex flex-col justify-center items-center md:mt-36 sm:mt-32 mt-28 max-[554px]:mt-14 px-3"
-      >
-        <h1 className="font-canaro-local font-medium leading-[117%] md:text-7xl text-primary-900 sm:text-6xl text-5xl max-[554px]:text-4xl ">
-          Empowering Africa with Smart Finance Solutions
-        </h1>
-        <p className="font-medium text-[32px] leading-[100%] text-primary-black lg:w-11/12 max-[554px]:mt-3 max-[554px]:text-2xl">
-          Provide innovative payment, payroll, and lending tools that help
-          companies streamline operations, empower employees, and grow
-          sustainably.
-        </p>
-        <div className="flex mt-12 gap-6 max-[554px]:flex-col max-[554px]:w-full max-[554px]:max-w-60">
-          <Button className="text-white  font-extrabold leading-[26.7px] text-xl bg-primary-color rounded-[39.42px] px-11 py-5 max-[554px]:p-2.5 max-[554px]:text-lg">
-            Explore Our Solutions
-          </Button>
-          <Button className="text-primary-color font-extrabold leading-[26.7px] text-xl border-[2.63px] border-primary-color rounded-[39.42px] px-11 py-5 min-[554px]:w-64 max-[554px]:p-2 max-[554px]:text-lg  ">
-            Get Started
-          </Button>
-        </div>
-        <Link href={""} className="mt-7">
-          <Image src={standardImage} alt="Security standards" />
-        </Link>
-      </section>
-      ;
-    </WidthConstraint>
-  );
-};
-
 // COMBINED HEADER
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -196,7 +162,6 @@ const Header = () => {
         </div>
       </WidthConstraint>
       <MobileMenu check={check} isScrolled={isScrolled} />
-      <Hero />
     </header>
   );
 };
