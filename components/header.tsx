@@ -139,7 +139,7 @@ const Header = () => {
           ></Image>
         </Link>
         <NavBar />
-        <div className="flex gap-4">
+        <div className="flex gap-4 pb-1">
           <>
             <Button
               asChild

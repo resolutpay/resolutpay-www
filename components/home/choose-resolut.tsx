@@ -67,11 +67,14 @@ const ChooseResolut = () => {
                 key={index}
                 className="mx-auto max-w-[392px] flex flex-col sm:block justify-center items-center text-center sm:text-left"
               >
-                <Image src={card.imgSrc} alt={card.imgAlt} />
-                <p className="font-tertiary font-medium text-2xl text-primary-900 mt-2">
+                <div className="flex w-full justify-center md:max-w-4/5 bg-amber-30">
+                  {" "}
+                  <Image src={card.imgSrc} alt={card.imgAlt} />
+                </div>
+                <p className="font-tertiary font-medium text-2xl text-primary-900 mt-2 md:text-center md:max-w-4/5">
                   {card.title}
                 </p>
-                <p className="font-tertiary text-base text-feminine-gray mt-2 md:max-w-4/5">
+                <p className="font-tertiary text-base text-feminine-gray mt-2 md:max-w-4/5 text-center">
                   {card.description}
                 </p>
               </div>

@@ -53,7 +53,7 @@
   --color-feminine-gray: var(--feminine-gray);
   --color-silver-sand: var(--silver-sand);
   --color-dark-blue: var(--dark-blue);
-  --bg-linear: var(--linear);
+  --color-gradient-blue: var(--linear);
 }
 
 :root {
