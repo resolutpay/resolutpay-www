@@ -47,7 +47,7 @@ const BrandMarquee = () => {
   const duplicatedBrands = [...brands, ...brands];
 
   return (
-    <WidthConstraint className="overflow-hidden ">
+    <WidthConstraint className="overflow-hidden mb-40">
       <h3 className="text-3xl md:text-5xl md:leading-[38.3px] font-bold mb-5 md:mb-11 text-center">
         Trusted by
       </h3>
@@ -104,7 +104,7 @@ const BrandMarquee = () => {
           <Input
             type="email"
             placeholder="enter your email"
-            className="ml-1 py-[24px] border-0 max-w-60 font-primary text-base leading-[160%] tracking-[0.2px] text-primary-black caret-primary-color focus-within:outline-0 focus-within:ring-0 focus:outline-0 focus:ring-0 focus-visible:outline-0 focus-visible:ring-0 placeholder:text-primary-black placeholder:text-base placeholder:font-primary placeholder:leading-[160%] placeholder:tracking-[0.2px] max-[309px]:max-w-full max-[309px]:text-center"
+            className="ml-1 py-[24px] border-0 max-w-60 font-primary text-base md:text-xl leading-[160%] tracking-[0.2px] text-primary-black caret-primary-color focus-within:outline-0 focus-within:ring-0 focus:outline-0 focus:ring-0 focus-visible:outline-0 focus-visible:ring-0 placeholder:text-primary-black placeholder:text-base md:placeholder:text-xl placeholder:font-primary placeholder:leading-[160%] placeholder:tracking-[0.2px] max-[309px]:max-w-full max-[309px]:text-center"
             value={email}
             onChange={(e) => {
               setEmail(e.target.value);
