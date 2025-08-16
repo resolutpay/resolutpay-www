@@ -1,62 +1,11 @@
 import React from "react";
-import cloud from "../../public/assets/illustrations/cloud.svg";
-import lightBulb2 from "../../public/assets/illustrations/light-bulb-2.svg";
-import bolt from "../../public/assets/illustrations/lightning.svg";
-import envelope from "../../public/assets/illustrations/mail.svg";
-import shield from "../../public/assets/illustrations/shield.svg";
-import user from "../../public/assets/illustrations/user.svg";
 import Image from "next/image";
 import WidthConstraint from "../width-constraint";
 import doraLeft from "../../public/assets/dora-why-resolut-left.svg";
 import doraRight from "../../public/assets/dora-why-resolut-right.svg";
-import { div } from "framer-motion/client";
+import { chooseResolutCards } from "../../lib/constants";
 
 const ChooseResolut = () => {
-  const chooseResolutCards = [
-    {
-      imgSrc: shield,
-      imgAlt: "Shield icon",
-      title: "Hourly settlements",
-      description:
-        "Don't wait for days before you get settled. Get your money into your account every hour.",
-    },
-    {
-      imgSrc: bolt,
-      imgAlt: "Lightning bolt icon",
-      title: "Hourly settlements",
-      description:
-        "Don't wait for days before you get settled. Get your money into your account every hour.",
-    },
-    {
-      imgSrc: user,
-      imgAlt: "User icon",
-      title: "Hourly settlements",
-      description:
-        "Don't wait for days before you get settled. Get your money into your account every hour.",
-    },
-    {
-      imgSrc: envelope,
-      imgAlt: "Envelope icon",
-      title: "Hourly settlements",
-      description:
-        "Don't wait for days before you get settled. Get your money into your account every hour.",
-    },
-    {
-      imgSrc: lightBulb2,
-      imgAlt: "Light bulb icon",
-      title: "Hourly settlements",
-      description:
-        "Don't wait for days before you get settled. Get your money into your account every hour.",
-    },
-    {
-      imgSrc: cloud,
-      imgAlt: "Cloud icon",
-      title: "Hourly settlements",
-      description:
-        "Don't wait for days before you get settled. Get your money into your account every hour.",
-    },
-  ];
-
   return (
     <div className="w-full relative">
       <Image

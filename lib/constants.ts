@@ -1,7 +1,128 @@
+import glo from "../public/assets/brands/glo.svg";
+import globafin from "../public/assets/brands/globafin.svg";
+import kalahari from "../public/assets/brands/kalahari-resorts.svg";
+import loyalty from "../public/assets/brands/loyalty-insurance.svg";
+import marcel from "../public/assets/brands/marcel.svg";
+import cloud from "../public/assets/illustrations/cloud.svg";
+import lightBulb2 from "../public/assets/illustrations/light-bulb-2.svg";
+import bolt from "../public/assets/illustrations/lightning.svg";
+import envelope from "../public/assets/illustrations/mail.svg";
+import shield from "../public/assets/illustrations/shield.svg";
+import user from "../public/assets/illustrations/user.svg";
+import fire from "../public/assets/illustrations/fire.svg";
+import star from "../public/assets/illustrations/star.svg";
+import bulb from "../public/assets/illustrations/light-bulb.svg";
+import instagram from "../public/assets/icons/instagram.svg";
+import linkedIn from "../public/assets/icons/linkedin.svg";
+import x from "../public/assets/icons/x.svg";
+import meta from "../public/assets/icons/meta.svg";
+
 export const navItems = [
   { title: "ABOUT", path: "#" },
   { title: "PRODUCTS", path: "#" },
   { title: "PRODUCTS", path: "#" },
   { title: "BLOG", path: "#" },
   { title: "DEVELOPERS", path: "#" },
+];
+
+// BRAND LOGOS
+export const brands = [
+  {
+    name: "Glo",
+    logo: glo,
+  },
+  {
+    name: "Globafin",
+    logo: globafin,
+  },
+  {
+    name: "Kalahari-Resorts",
+    logo: kalahari,
+  },
+  {
+    name: "Loyalty-Insurance",
+    logo: loyalty,
+  },
+  {
+    name: "Marcel",
+    logo: marcel,
+  },
+];
+
+// WHY RESOLUT CARDS
+export const chooseResolutCards = [
+  {
+    imgSrc: shield,
+    imgAlt: "Shield icon",
+    title: "Hourly settlements",
+    description:
+      "Don't wait for days before you get settled. Get your money into your account every hour.",
+  },
+  {
+    imgSrc: bolt,
+    imgAlt: "Lightning bolt icon",
+    title: "Hourly settlements",
+    description:
+      "Don't wait for days before you get settled. Get your money into your account every hour.",
+  },
+  {
+    imgSrc: user,
+    imgAlt: "User icon",
+    title: "Hourly settlements",
+    description:
+      "Don't wait for days before you get settled. Get your money into your account every hour.",
+  },
+  {
+    imgSrc: envelope,
+    imgAlt: "Envelope icon",
+    title: "Hourly settlements",
+    description:
+      "Don't wait for days before you get settled. Get your money into your account every hour.",
+  },
+  {
+    imgSrc: lightBulb2,
+    imgAlt: "Light bulb icon",
+    title: "Hourly settlements",
+    description:
+      "Don't wait for days before you get settled. Get your money into your account every hour.",
+  },
+  {
+    imgSrc: cloud,
+    imgAlt: "Cloud icon",
+    title: "Hourly settlements",
+    description:
+      "Don't wait for days before you get settled. Get your money into your account every hour.",
+  },
+];
+
+// UNIQUE CHALLENGES CARDS
+export const solution = [
+  {
+    title: "Insurance",
+    description:
+      "We provide solutions for the insurance industry from broker to  underwriter to reinsurance",
+    imageSrc: fire,
+    imageAlt: "Fire",
+  },
+  {
+    title: "SMEs",
+    description:
+      "Solving technology gaps for smalland medium scale enterprises",
+    imageSrc: star,
+    imageAlt: "Star",
+  },
+  {
+    title: "Point of Sales",
+    description:
+      "Pay with card or mobile money and get your order delivered in minutes",
+    imageSrc: bulb,
+    imageAlt: "Bulb",
+  },
+];
+// FOOTER SOCIAL MEDIA LINKS
+export const socials = [
+  { icon: instagram, label: "Instagram" },
+  { icon: linkedIn, label: "LinkedIn" },
+  { icon: x, label: "X/Twitter" },
+  { icon: meta, label: "Meta/Facebook" },
 ];

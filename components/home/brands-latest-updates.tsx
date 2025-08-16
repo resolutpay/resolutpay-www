@@ -2,14 +2,10 @@
 import React, { useState } from "react";
 import WidthConstraint from "../width-constraint";
 import Image from "next/image";
-import glo from "../../public/assets/brands/glo.svg";
-import globafin from "../../public/assets/brands/globafin.svg";
-import kalahari from "../../public/assets/brands/kalahari-resorts.svg";
-import loyalty from "../../public/assets/brands/loyalty-insurance.svg";
-import marcel from "../../public/assets/brands/marcel.svg";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
+import { brands } from "../../lib/constants";
 
 const BrandMarquee = () => {
   const [failedImages, setFailedImages] = useState(new Set());
@@ -18,30 +14,6 @@ const BrandMarquee = () => {
   const handleImageError = (brandName: string) => {
     setFailedImages((prev) => new Set([...prev, brandName]));
   };
-
-  // BRAND LOGOS
-  const brands = [
-    {
-      name: "Glo",
-      logo: glo,
-    },
-    {
-      name: "Globafin",
-      logo: globafin,
-    },
-    {
-      name: "Kalahari-Resorts",
-      logo: kalahari,
-    },
-    {
-      name: "Loyalty-Insurance",
-      logo: loyalty,
-    },
-    {
-      name: "Marcel",
-      logo: marcel,
-    },
-  ];
 
   // Duplicated the brands array to create seamless loop
   const duplicatedBrands = [...brands, ...brands];

@@ -1,34 +1,9 @@
 import React from "react";
 import WidthConstraint from "../width-constraint";
 import Image from "next/image";
-import fire from "../../public/assets/illustrations/fire.svg";
-import star from "../../public/assets/illustrations/star.svg";
-import bulb from "../../public/assets/illustrations/light-bulb.svg";
+import { solution } from "../../lib/constants";
 
 const Solutions = () => {
-  const solution = [
-    {
-      title: "Insurance",
-      description:
-        "We provide solutions for the insurance industry from broker to  underwriter to reinsurance",
-      imageSrc: fire,
-      imageAlt: "Fire",
-    },
-    {
-      title: "SMEs",
-      description:
-        "Solving technology gaps for smalland medium scale enterprises",
-      imageSrc: star,
-      imageAlt: "Star",
-    },
-    {
-      title: "Point of Sales",
-      description:
-        "Pay with card or mobile money and get your order delivered in minutes",
-      imageSrc: bulb,
-      imageAlt: "Bulb",
-    },
-  ];
   return (
     <WidthConstraint>
       <section className=" mt-10 sm:mt-44 md:mt-0">

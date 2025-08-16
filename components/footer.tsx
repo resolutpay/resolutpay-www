@@ -3,20 +3,11 @@ import WidthConstraint from "./width-constraint";
 import Image from "next/image";
 import resolutLogo from "../public/assets/resolut.svg";
 import Link from "next/link";
-import instagram from "../public/assets/icons/instagram.svg";
-import linkedIn from "../public/assets/icons/linkedin.svg";
-import x from "../public/assets/icons/x.svg";
-import meta from "../public/assets/icons/meta.svg";
 import { AtSign, Mail, Phone } from "lucide-react";
 import doraFooter from "../public/assets/dora-footer.svg";
+import { socials } from "../lib/constants";
 
 const Footer = () => {
-  const socials = [
-    { icon: instagram, label: "Instagram" },
-    { icon: linkedIn, label: "LinkedIn" },
-    { icon: x, label: "X/Twitter" },
-    { icon: meta, label: "Meta/Facebook" },
-  ];
   return (
     <footer className="relative">
       <Image
