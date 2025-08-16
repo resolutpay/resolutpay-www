@@ -4,17 +4,11 @@ import Image from "next/image";
 import resolutLogo from "../public/assets/resolut.svg";
 import Link from "next/link";
 import { AtSign, Mail, Phone } from "lucide-react";
-import doraFooter from "../public/assets/dora-footer.svg";
 import { socials } from "../lib/constants";
 
 const Footer = () => {
   return (
-    <footer className="relative">
-      <Image
-        src={doraFooter}
-        alt="Dora Vector"
-        className="absolute right-0 -top-4/5 -z-10"
-      />
+    <footer className="pb-10">
       {/* Grid Layout Container - 3 Columns*/}
       <WidthConstraint className="px-5 grid grid-cols-1  sm:grid-cols-3 gap-[74px] justify-center">
         {/* Column 1 */}
@@ -97,7 +91,7 @@ const Footer = () => {
           </div>
         </div>
       </WidthConstraint>
-      <WidthConstraint className="mt-28 pb-52 px-5">
+      <WidthConstraint className="mt-20 px-5">
         <p className="font-auxilary text-sm leading-[21px] text-primary-900 text-center">
           &copy; {new Date().getFullYear()} Resolut Business Solutions All
           Rights Reserved
