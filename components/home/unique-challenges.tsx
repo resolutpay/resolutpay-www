@@ -48,7 +48,7 @@ const Solutions = () => {
             return (
               <div
                 key={index}
-                className="bg-primary-800 text-primary-100 flex flex-col justify-between rounded-[20px] pt-10 sm:pt-16 max-w-lg overflow-hidden mx-auto"
+                className="bg-primary-800 text-primary-100 flex flex-col justify-between rounded-[20px] pt-10 sm:pt-16 max-w-lg overflow-hidden mx-auto hover:scale-90 transform transition-all duration-700 ease-in-out hover:shadow-lg hover:shadow-black"
               >
                 <p className="font-secondary leading-[36px] text-lg sm:text-xl lg:text-2xl text-white px-6 mb-2">
                   {item.title}

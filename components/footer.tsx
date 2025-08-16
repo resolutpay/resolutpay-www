@@ -22,7 +22,11 @@ const Footer = () => {
       <WidthConstraint className="px-5 grid grid-cols-1  sm:grid-cols-3 gap-[74px] justify-center">
         {/* Column 1 */}
         <div className="w-full">
-          <Image src={resolutLogo} alt="Resolut Business Solutions" />
+          <Image
+            src={resolutLogo}
+            alt="Resolut Business Solutions"
+            className="transition-all duration-300 hover:scale-110 hover:rotate-3 hover:drop-shadow-lg transform-gpu"
+          />
         </div>
 
         {/* Column 2 */}
@@ -58,7 +62,7 @@ const Footer = () => {
               <AtSign color="#063972" className="mt-1  min-[273px]:min-w-7" />
               <Link
                 href={""}
-                className="font-semibold text-2xl leading-[27.7px]"
+                className="font-semibold text-2xl leading-[27.7px] hover:underline"
               >
                 hi@resolutfinance.com
               </Link>
@@ -87,7 +91,7 @@ const Footer = () => {
                     <Image
                       src={social.icon}
                       alt={social.label}
-                      className="scale-75 sm:scale-100"
+                      className="scale-75 sm:scale-100 hover:drop-shadow-xl drop-shadow-black hover:animate-bounce hover:scale-90 transition-all transform duration-500 ease-initial"
                     />
                   </Link>
                 );

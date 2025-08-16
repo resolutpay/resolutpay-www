@@ -135,23 +135,34 @@ const Header = () => {
           <Image
             src={resolutLogo}
             alt="resolut-bussiness-solutions"
-            className="scale-80 sm:scale-100 max-[246px]:hidden sm:ml-5 xlg:ml-0"
+            className="scale-80 sm:scale-100 max-[246px]:hidden sm:ml-5 xlg:ml-0 transition-all duration-300 hover:scale-110 hover:rotate-3 hover:drop-shadow-lg transform-gpu"
           ></Image>
         </Link>
         <NavBar />
         <div className="flex gap-4 pb-2">
           <>
+            {/* Sign In Button */}
             <Button
               asChild
-              className="px-5 hidden lg:flex text-primary-900 shadow-none text-base font-extrabold hover:border-2 hover:rounded-4xl transition-colors duration-300 hover:border-primary-900 hover:bg-background  dark:bg-white"
+              className="px-5 hidden lg:flex shadow-none text-base font-extrabold"
             >
-              <Link href="/sign-up">Login</Link>
+              <Link
+                href="/sign-in"
+                className="relative overflow-hidden text-primary-900 border-2 border-transparent rounded-lg group transition-all duration-300 hover:rounded-4xl hover:border-primary-900 dark:bg-white"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-violet-500 to-primary-900 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out"></div>
+                <span className="text-primary-900 font-extrabold relative z-10 group-hover:text-white transition-colors duration-500 ease-initial">
+                  Login
+                </span>
+              </Link>
             </Button>
+
+            {/* SignUP Button */}
             <Button
               asChild
-              className="px-7 py-3.5 hidden lg:flex bg-black-100 text-primary-900 font-extrabold rounded-4xl mr-2 hover:right-2 hover:rounded-4xl transition-all duration-700 hover:bg-blue-200 hover:text-whit"
+              className="px-7 py-3.5 hidden lg:flex bg-black-100 text-primary-900 font-extrabold rounded-4xl mr-2 hover:right-2 hover:rounded-4xl transition-all duration-700 hover:bg-primary-color hover:text-white hover:animate-bounce"
             >
-              <Link href="/sign-in">Get Started</Link>
+              <Link href="/sign-up">Get Started</Link>
             </Button>
           </>
           <Menu

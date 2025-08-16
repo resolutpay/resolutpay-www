@@ -10,6 +10,7 @@ import marcel from "../../public/assets/brands/marcel.svg";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const BrandMarquee = () => {
   const [failedImages, setFailedImages] = useState(new Set());
@@ -116,6 +117,7 @@ const BrandMarquee = () => {
           >
             <span>Subscribe</span>{" "}
             <ArrowRight color="#F2F2F2" className="mt-1" />
+            <Link href={""}></Link>
           </Button>
         </div>
       </section>
