@@ -18,11 +18,10 @@ import x from "../public/assets/icons/x.svg";
 import meta from "../public/assets/icons/meta.svg";
 
 export const navItems = [
-  { title: "ABOUT", path: "#" },
-  { title: "PRODUCTS", path: "#" },
-  { title: "PRODUCTS", path: "#" },
-  { title: "BLOG", path: "#" },
-  { title: "DEVELOPERS", path: "#" },
+  { title: "ABOUT", path: "/about" },
+  { title: "PRODUCTS", path: "/products" },
+  { title: "DEVELOPERS", path: "developers" },
+  { title: "SUPPORT", path: "support" },
 ];
 
 // BRAND LOGOS
@@ -125,4 +124,67 @@ export const socials = [
   { icon: linkedIn, label: "LinkedIn" },
   { icon: x, label: "X/Twitter" },
   { icon: meta, label: "Meta/Facebook" },
+];
+
+// TEAM LIST
+export const teams = [
+  {
+    name: "Team Name",
+    portfolio: "https://example.com/portfolio1",
+    image: "url",
+  },
+  {
+    name: "Team Name",
+    portfolio: "https://example.com/portfolio2",
+    image: "url",
+  },
+  {
+    name: "Team Name",
+    portfolio: "https://example.com/portfolio3",
+    image: "url",
+  },
+  {
+    name: "Team Name",
+    portfolio: "https://example.com/portfolio4",
+    image: "url",
+  },
+  {
+    name: "Team Name",
+    portfolio: "https://example.com/portfolio5",
+    image: "url",
+  },
+  {
+    name: "Team Name",
+    portfolio: "https://example.com/portfolio6",
+    image: "url",
+  },
+];
+
+// RITHM
+export const coreValues = [
+  {
+    id: 0,
+    title: "Resolute",
+    content: "Unwavering commitment to digital transformation and innovation",
+  },
+  {
+    id: 1,
+    title: "Integrity",
+    content: "Upholding the highest ethical standards in all actions",
+  },
+  {
+    id: 2,
+    title: "Timeless",
+    content: "Creating sustainable and scalable solutions",
+  },
+  {
+    id: 3,
+    title: "Humanity",
+    content: "Prioritizing people and making a positive impact on lives",
+  },
+  {
+    id: 4,
+    title: "Mindful",
+    content: "Being conscious of our social, environmental",
+  },
 ];

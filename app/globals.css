@@ -54,6 +54,7 @@
   --color-silver-sand: var(--silver-sand);
   --color-dark-blue: var(--dark-blue);
   --color-gradient-blue: var(--linear);
+  --color-primary-700: var(--primary-700);
 }
 
 :root {
@@ -99,6 +100,7 @@
   --silver-sand: #b9bebd;
   --linear: linear-gradient(90deg, #21bbec 0%, #0068c9 39%, #130d3a 100%);
   --dark-blue: #161c2d;
+  --primary-700: #1170aa;
 }
 
 .dark {
@@ -187,7 +189,6 @@
     transform: translate(calc(-50% - 0.5rem));
   }
 }
-
 
 /* Brand Marquee Animations */
 @keyframes marquee {
