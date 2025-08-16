@@ -8,6 +8,7 @@ import linkedIn from "../public/assets/icons/linkedin.svg";
 import x from "../public/assets/icons/x.svg";
 import meta from "../public/assets/icons/meta.svg";
 import { AtSign, Mail, Phone } from "lucide-react";
+import doraFooter from "../public/assets/dora-footer.svg";
 
 const Footer = () => {
   const socials = [
@@ -17,7 +18,12 @@ const Footer = () => {
     { icon: meta, label: "Meta/Facebook" },
   ];
   return (
-    <footer>
+    <footer className="relative">
+      <Image
+        src={doraFooter}
+        alt="Dora Vector"
+        className="absolute right-0 -top-4/5 -z-10"
+      />
       {/* Grid Layout Container - 3 Columns*/}
       <WidthConstraint className="px-5 grid grid-cols-1  sm:grid-cols-3 gap-[74px] justify-center">
         {/* Column 1 */}
