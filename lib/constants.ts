@@ -16,12 +16,13 @@ import instagram from "../public/assets/icons/instagram.svg";
 import linkedIn from "../public/assets/icons/linkedin.svg";
 import x from "../public/assets/icons/x.svg";
 import meta from "../public/assets/icons/meta.svg";
+import { label } from "framer-motion/client";
 
 export const navItems = [
   { title: "ABOUT", path: "/about" },
   { title: "PRODUCTS", path: "/products" },
-  { title: "DEVELOPERS", path: "developers" },
-  { title: "SUPPORT", path: "support" },
+  { title: "DEVELOPERS", path: "/developers" },
+  { title: "SUPPORT", path: "/support" },
 ];
 
 // BRAND LOGOS
@@ -186,5 +187,63 @@ export const coreValues = [
     id: 4,
     title: "Mindful",
     content: "Being conscious of our social, environmental",
+  },
+];
+
+// GET IN TOUCH FORM DATA
+export const formFields: {
+  id: "fullname" | "companyname" | "email" | "message";
+  label: string;
+  input: boolean;
+}[] = [
+  { id: "fullname", label: "Full name", input: true },
+  { id: "companyname", label: "Company name", input: true },
+  { id: "email", label: "Email address", input: true },
+  { id: "message", label: "Type your message", input: false },
+];
+
+// FAQS
+export const faqs = [
+  {
+    value: "item-1",
+    question: "What credit score do I need to apply for a credit card?",
+    answer:
+      "The required credit score may vary depending on the specific credit card. Generally, a good to excellent credit score (typically 670 or above) increases your chances of approval for premium credit cards. Some cards are designed for individuals with lower scores, but they may come with higher interest rates or lower credit limits. It’s always recommended to review the eligibility criteria of the card you are applying for.",
+  },
+  {
+    value: "item-2",
+    question: "How can I apply for a credit card online?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim lacus nec justo tincidunt, non posuere ligula pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis elementum quam vitae aliquam tempus. Morbi et dui at nulla euismod aliquam vitae ut lectus, sed nec leo cursus sem.",
+  },
+  {
+    value: "item-3",
+    question: "Are there any annual fees associated with the credit card?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat, sem non dictum interdum, sapien sem aliquet turpis, vel consequat magna eros sed purus. Integer feugiat, ex nec convallis elementum, sem magna volutpat nunc, sit amet facilisis lorem ipsum vel sapien. Aliquam erat volutpat. Nam non eros sed magna consequat facilisis.",
+  },
+  {
+    value: "item-4",
+    question: "How long does it take to receive the credit card once approved?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat, nibh sed luctus interdum, nulla neque porta ex, at dignissim mi nisl at justo. Ut sit amet tellus in justo viverra consequat. Suspendisse potenti. Nulla facilisi; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+  },
+  {
+    value: "item-5",
+    question: "How can I check my credit card balance and transactions?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat lectus a massa finibus, vitae aliquet libero luctus. Mauris sit amet neque feugiat, elementum mi sit amet, sagittis justo. Phasellus fermentum sapien sit amet neque condimentum cursus. Curabitur quis facilisis ipsum, in egestas lorem.",
+  },
+  {
+    value: "item-6",
+    question: "What should I do if my credit card is lost or stolen?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet odio ac nulla porttitor malesuada sit amet sed augue. Suspendisse potenti. Vivamus viverra, lectus in pulvinar malesuada, turpis sapien dignissim libero, a malesuada justo eros nec libero. Pellentesque sit amet lacus at erat interdum efficitur vel nec lectus.",
+  },
+  {
+    value: "item-7",
+    question: "Is my credit card information secure?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rutrum sapien nec nisl pretium, nec tristique ex viverra. Morbi posuere, nunc et facilisis lacinia, sem lacus blandit magna, eget volutpat est mauris nec nunc. Sed vehicula magna non volutpat sagittis. Nullam nec fermentum risus, id commodo est.",
   },
 ];

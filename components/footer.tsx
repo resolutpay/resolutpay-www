@@ -9,15 +9,9 @@ import dora from "../public/assets/dora-footer.svg";
 
 const Footer = () => {
   return (
-    <footer className="relative">
-      <Image
-        src={dora}
-        alt=""
-        className="absolute -top-2/3 -z-50 -right-[15%] h-[50rem]"
-      />
-
+    <footer className="mt-auto bg-[url('/assets/dora-footer.svg')] bg-no-repeat bg-right-bottom bg-size-[50%_100%] pt-40">
       {/* Grid Layout Container - 3 Columns*/}
-      <WidthConstraint className="px-5 grid grid-cols-1  sm:grid-cols-3 gap-[74px] justify-center">
+      <WidthConstraint className="px-5 grid grid-cols-1 sm:grid-cols-3 gap-[74px] justify-center">
         {/* Column 1 */}
         <div className="w-full">
           <Image
@@ -99,7 +93,7 @@ const Footer = () => {
         </div>
       </WidthConstraint>
 
-      <WidthConstraint className="mt-12 px-5 mb-10">
+      <WidthConstraint className="mt-12 px-5 pb-10">
         <p className="font-auxilary text-sm leading-[21px] text-primary-900 text-center">
           &copy; {new Date().getFullYear()} Resolut Business Solutions All
           Rights Reserved

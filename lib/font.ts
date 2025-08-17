@@ -3,6 +3,7 @@ import {
   Sora,
   M_PLUS_1,
   Instrument_Sans,
+  Lexend,
 } from "next/font/google";
 import localFont from "next/font/local";
 
@@ -216,4 +217,9 @@ export const canaroBook = localFont({
     },
   ],
   variable: "--font-canaro-book",
+});
+
+export const lexend = Lexend({
+  variable: "--font-lexend",
+  subsets: ["latin"],
 });

@@ -11,7 +11,7 @@ const EmailUpdates = () => {
   return (
     <WidthConstraint>
       {/* LATEST UPDATE SECTION */}
-      <section className="px-5 mt-24 sm:mt-32 md:mt-36 lg:mt-40 flex flex-col justify-center items-center mb-40">
+      <section className="px-5 mt-24 sm:mt-32 md:mt-36 lg:mt-40 flex flex-col justify-center items-center">
         <div className="text-center">
           <h1 className="font-black sm:text-5xl text-3xl md:text-7xl lg:text-[80px] md:leading-[67.2px] -tracking-[0.58px]">
             Get Our Latest Updates

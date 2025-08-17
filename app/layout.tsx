@@ -9,13 +9,12 @@ import {
   instrumentSans,
   mPlus1,
   sora,
+  lexend,
 } from "../lib/font";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Image from "next/image";
-import bgImage from "../public/assets/layout-background.svg";
 import groupbg from "../public/assets/group-bg.svg";
-
 import EmailUpdates from "@/components/email-updates";
 
 export const metadata: Metadata = {
@@ -31,12 +30,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${canaro.variable} ${canaroBook.variable} ${darkerGrotesque.variable} ${sora.variable} ${mPlus1.variable} ${instrumentSans.variable} antialiased`}
+        className={`${canaro.variable} ${canaroBook.variable} ${darkerGrotesque.variable} ${sora.variable} ${mPlus1.variable} ${instrumentSans.variable} ${lexend.variable} antialiased flex flex-col min-h-dvh`}
       >
         {/* Background Image */}
-        <Image src={groupbg} alt="" className="absolute  top-0 -z-50 w-full" />
+        <Image src={groupbg} alt="" className="absolute top-0 -z-50 w-full" />
         <Header />
-        {children}
+        <main className="flex-1">{children}</main>
         <EmailUpdates />
         <Footer />
       </body>
