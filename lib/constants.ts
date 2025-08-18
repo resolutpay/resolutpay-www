@@ -17,6 +17,7 @@ import linkedIn from "../public/assets/icons/linkedin.svg";
 import x from "../public/assets/icons/x.svg";
 import meta from "../public/assets/icons/meta.svg";
 import { label } from "framer-motion/client";
+import { FormDataType } from "./interface";
 
 export const navItems = [
   { title: "ABOUT", path: "/about" },
@@ -245,5 +246,68 @@ export const faqs = [
     question: "Is my credit card information secure?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rutrum sapien nec nisl pretium, nec tristique ex viverra. Morbi posuere, nunc et facilisis lacinia, sem lacus blandit magna, eget volutpat est mauris nec nunc. Sed vehicula magna non volutpat sagittis. Nullam nec fermentum risus, id commodo est.",
+  },
+];
+
+// Type of business  Options
+export const businessTypeOptions = [
+  {
+    value: "starter",
+    label: "Starter Business",
+    description:
+      "I'm testing my ideas with real customers, and preparing to register my company",
+  },
+  {
+    value: "registered",
+    label: "Registered Business",
+    description:
+      "My business has the approval, documentation, and licences required to operate legally",
+  },
+];
+
+export const developerOptions = [
+  { value: "yes", label: "Yes, I am" },
+  { value: "no", label: "No, I'm not" },
+];
+
+export const formData: FormDataType[] = [
+  { id: "country", label: "Country", type: "country" },
+  {
+    id: "businessName",
+    label: "Business name",
+    type: "input",
+  },
+  {
+    id: "firstName",
+    label: "First name",
+    type: "input",
+  },
+  {
+    id: "lastName",
+    label: "Last name",
+    type: "input",
+  },
+
+  {
+    id: "email",
+    label: "Email address",
+    type: "input",
+  },
+  { id: "phone", label: "Phone number", type: "phone" },
+  {
+    id: "password",
+    label: "Password",
+    type: "password",
+  },
+  {
+    id: "businessType",
+    label: "What type of business do you own?",
+    type: "business",
+  },
+
+  {
+    id: "isDeveloper",
+    label: "Are you a software developer?",
+    type: "developer",
   },
 ];

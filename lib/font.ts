@@ -4,6 +4,7 @@ import {
   M_PLUS_1,
   Instrument_Sans,
   Lexend,
+  Inter,
 } from "next/font/google";
 import localFont from "next/font/local";
 
@@ -221,5 +222,10 @@ export const canaroBook = localFont({
 
 export const lexend = Lexend({
   variable: "--font-lexend",
+  subsets: ["latin"],
+});
+
+export const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });

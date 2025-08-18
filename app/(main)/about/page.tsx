@@ -1,14 +1,14 @@
 import WidthConstraint from "@/components/width-constraint";
 import Image from "next/image";
 import React from "react";
-import pci from "../../public/assets/pci-insight.svg";
-import rocket from "../../public/assets/illustrations/rocket.svg";
-import bulb from "../../public/assets/illustrations/bulb-mission.svg";
-import { teams } from "../../lib/constants";
+import pci from "@/public/assets/pci-insight.svg";
+import rocket from "@/public/assets/illustrations/rocket.svg";
+import bulb from "@/public/assets/illustrations/bulb-mission.svg";
+import { teams } from "@/lib/constants";
 import Link from "next/link";
 import Rithm from "@/components/about/core-values";
-import corebg from "../../public/assets/core-values-bg.svg";
-import ring from "../../public/assets/head-ring.svg";
+import corebg from "@/public/assets/core-values-bg.svg";
+import ring from "@/public/assets/head-ring.svg";
 
 const About = () => {
   return (
@@ -17,7 +17,7 @@ const About = () => {
         {/* About US */}
         <section className=" mt-35 sm:mt-48 px-5 flex flex-col items-center">
           <div className="relative flex flex-col items-center">
-            <h1 className="font-canaro-local font-medium leading-[117%] text-4xl sm:text-6xl md:text-7xl text-primary-900 text-center">
+            <h1 className="font-canaro-local font-medium sm:leading-[117%] text-4xl sm:text-6xl md:text-7xl text-primary-900 text-center sm:mb-10">
               About US
             </h1>
             <Image src={pci} alt="Security Standards" className="mt-5" />
