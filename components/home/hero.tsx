@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import WidthConstraint from "../width-constraint";
-import standardImage from "../../public/assets/pci-insight.svg";
-import ring from "../../public/assets/head-ring.svg";
+import standardImage from "@/assets/pci-insight.svg?url";
+import ring from "@/assets/head-ring.svg?url";
 
 const Hero = () => {
   return (

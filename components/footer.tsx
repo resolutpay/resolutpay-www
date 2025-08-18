@@ -1,15 +1,16 @@
 import React from "react";
 import WidthConstraint from "./width-constraint";
 import Image from "next/image";
-import resolutLogo from "../public/assets/resolut.svg";
+import resolutLogo from "@/assets/resolut.svg?url";
 import Link from "next/link";
 import { AtSign, Mail, Phone } from "lucide-react";
 import { socials } from "../lib/constants";
-import dora from "../public/assets/dora-footer.svg";
 
 const Footer = () => {
   return (
-    <footer className="mt-auto bg-[url('/assets/dora-footer.svg')] bg-no-repeat bg-right-bottom bg-size-[50%_100%] pt-40">
+    <footer
+      className={`mt-auto bg-[url('/dora-footer.svg')]  bg-no-repeat bg-right-bottom bg-size-[50%_100%] pt-40`}
+    >
       {/* Grid Layout Container - 3 Columns*/}
       <WidthConstraint className="px-5 grid grid-cols-1 sm:grid-cols-3 gap-[74px] justify-center">
         {/* Column 1 */}

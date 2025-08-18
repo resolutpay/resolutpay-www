@@ -1,14 +1,14 @@
 import WidthConstraint from "@/components/width-constraint";
 import Image from "next/image";
 import React from "react";
-import pci from "@/public/assets/pci-insight.svg";
-import rocket from "@/public/assets/illustrations/rocket.svg";
-import bulb from "@/public/assets/illustrations/bulb-mission.svg";
+import pci from "@/assets/pci-insight.svg?url";
+import rocket from "@/assets/illustrations/rocket.svg?url";
+import bulb from "@/assets/illustrations/bulb-mission.svg?url";
 import { teams } from "@/lib/constants";
 import Link from "next/link";
 import Rithm from "@/components/about/core-values";
-import corebg from "@/public/assets/core-values-bg.svg";
-import ring from "@/public/assets/head-ring.svg";
+import corebg from "@/assets/core-values-bg.svg?url";
+import ring from "@/assets/head-ring.svg?url";
 
 const About = () => {
   return (

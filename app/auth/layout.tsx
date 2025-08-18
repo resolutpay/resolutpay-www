@@ -19,7 +19,7 @@ export default function RootLayout({
         {/* Page Grid */}
         <div className="grid min-[600px]:grid-cols-[35%_auto] min-[800px]:grid-cols-[45%_auto] min-[1015px]:grid-cols-[55%_auto] w-full">
           {/* Left Section(Welcome to Resolut) */}
-          <section className="bg-primary-color relative bg-[url('/assets/circle-top.svg')] bg-no-repeat [background-size:min(67%,552px)_auto] max-[600px]:py-20 max-[600px]:bg-contain min-[600px]:max-[800px]:bg-size-[100%_85%] min-[600px]:max-[800px]:bg-top">
+          <section className="bg-primary-color relative bg-[url('/circle-top.svg')] bg-no-repeat [background-size:min(67%,552px)_auto] max-[600px]:py-20 max-[600px]:bg-contain min-[600px]:max-[800px]:bg-size-[100%_85%] min-[600px]:max-[800px]:bg-top">
             <div className="md:max-w-[362.43px] md:mt-64 md:ml-40 max-[600px]:flex flex-col items-center text-center sm:text-left min-[600px]:max-[800px]:mt-[70%] min-[600px]:max-[800px]:px-2 min-[600px]:max-[800px]:text-justify">
               <h3 className="font-inter font-semibold text-2xl sm:text-[40px] leading-12 text-white mb-4 min-[600px]:max-[800px]:text-base ">
                 Welcome to Resolut

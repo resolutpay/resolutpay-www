@@ -1,11 +1,11 @@
 import WidthConstraint from "@/components/width-constraint";
 import React from "react";
-import pci from "@/public/assets/pci-insight.svg";
-import ring from "@/public/assets/head-ring.svg";
+import pci from "@/assets/pci-insight.svg?url";
+import ring from "@/assets/head-ring.svg?url";
 import Image from "next/image";
 import GetInTouch from "@/components/support/get-in-touch-form";
 import FAQ from "@/components/support/faq";
-import circles from "@/public/assets/circles.svg";
+import circles from "@/assets/circles.svg?url";
 
 const Support = () => {
   return (

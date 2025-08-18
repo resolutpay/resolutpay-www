@@ -3,9 +3,9 @@ import WidthConstraint from "../width-constraint";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import Image from "next/image";
-import groupMobile from "../../public/assets/group-mobile.svg";
-import group from "../../public/assets/group.svg";
-import wave from "../../public/assets/wave.svg";
+import groupMobile from "@/assets/group-mobile.svg?url";
+import group from "@/assets/group.svg?url";
+import wave from "@/assets/wave.svg?url";
 
 const Ipap = () => {
   return (
