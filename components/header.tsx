@@ -1,15 +1,14 @@
 "use client";
+import { navItems } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
+import { LogIn, Menu } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { LogIn, Menu } from "lucide-react";
 import { Button } from "./ui/button";
-import resolutLogo from "../public/assets/resolut.svg";
-import { navItems } from "@/lib/constants";
+import Logo from "./ui/logo";
 import WidthConstraint from "./width-constraint";
-import Image from "next/image";
 
 // NAVIGATION MENU MOBILE
 const MobileMenu = ({ check }: { check: boolean; isScrolled: boolean }) => {
@@ -131,13 +130,7 @@ const Header = () => {
       }`}
     >
       <WidthConstraint className="flex gap-10 justify-between items-center h-full">
-        <Link href={"#"}>
-          <Image
-            src={resolutLogo}
-            alt="resolut-bussiness-solutions"
-            className="scale-80 sm:scale-100 max-[246px]:hidden sm:ml-5 xlg:ml-0 transition-all duration-300 hover:scale-110 hover:rotate-3 hover:drop-shadow-lg transform-gpu"
-          ></Image>
-        </Link>
+        <Logo />
         <NavBar />
         <div className="flex gap-4 pb-2">
           <>
