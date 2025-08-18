@@ -8,9 +8,7 @@ import { socials } from "../lib/constants";
 
 const Footer = () => {
   return (
-    <footer
-      className={`mt-auto bg-[url('/dora-footer.svg')]  bg-no-repeat bg-right-bottom bg-size-[50%_100%] pt-40`}
-    >
+    <footer className={`mt-auto pt-40`}>
       {/* Grid Layout Container - 3 Columns*/}
       <WidthConstraint className="px-5 grid grid-cols-1 sm:grid-cols-3 gap-[74px] justify-center">
         {/* Column 1 */}
