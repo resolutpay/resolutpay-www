@@ -52,7 +52,7 @@ const MobileMenu = ({ check }: { check: boolean; isScrolled: boolean }) => {
                   className="text-primary-900 shadow-none text-base font-extrabold"
                   asChild
                 >
-                  <Link href="/sign-in">
+                  <Link href="/auth/otp-verification">
                     Login <LogIn className="mt-0.5 size-3.5" />
                   </Link>
                 </Button>
@@ -60,7 +60,7 @@ const MobileMenu = ({ check }: { check: boolean; isScrolled: boolean }) => {
                   className="text-primary-900 shadow-none text-base font-extrabold rounded-2xl border-2 p-1 px-2 bg-black-100"
                   asChild
                 >
-                  <Link href="/sign-up">Get Started</Link>
+                  <Link href="/auth/create-account">Get Started</Link>
                 </Button>
               </div>
             </motion.nav>
