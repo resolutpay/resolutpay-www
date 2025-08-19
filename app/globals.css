@@ -96,7 +96,7 @@
   --primary-100: #d2fffc;
   --primary-800: #0a4f88;
   --primary-700: #1170aa;
-  -primary-600: #1793c9;
+  --primary-600: #1793c9;
   --black-100: #f2f2f2;
   --black-200: #e6e6e6;
   --black-400: #6d6d6d;
@@ -155,20 +155,14 @@
 /* NAVBAR ANIMATION */
 .scroller[data-animated="true"] {
   overflow: hidden;
-  -webkit-mask: linear-gradient(
-    90deg,
-    transparent,
-    white 5%,
-    white 95%,
-    transparent
-  );
+  -webkit-mask: linear-gradient(90deg, transparent, white 5%, white 95%, transparent);
   mask: linear-gradient(90deg, transparent, white 5%, white 95%, transparent);
 }
 .scroller[data-animated="true"] .scroller__inner {
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration, 30s)
-    var(--_animation-direction, forwards) linear infinite;
+  animation: scroll var(--_animation-duration, 30s) var(--_animation-direction, forwards)
+    linear infinite;
 }
 .scroller[data-animated="true"]:hover .scroller__inner {
   animation-play-state: paused;
@@ -255,4 +249,8 @@
     height: 0;
     opacity: 0;
   }
+}
+
+.hide-accordion-chevron > svg {
+  display: none;
 }
