@@ -139,7 +139,7 @@ const Header = () => {
               asChild
               className="px-5 hidden lg:flex shadow-none text-base font-extrabold text-primary-900 hover:bg-transparent hover:text-primary-900/70"
             >
-              <Link href="/sign-in">Login</Link>
+              <Link href="/auth/otp-verification">Login</Link>
             </Button>
 
             {/* SignUP Button */}
@@ -147,7 +147,7 @@ const Header = () => {
               asChild
               className="px-7 py-3.5 hidden lg:flex bg-black-100 text-primary-900 font-extrabold rounded-4xl mr-2 hover:bg-black-200"
             >
-              <Link href="/sign-up">Get Started</Link>
+              <Link href="/auth/create-account">Get Started</Link>
             </Button>
           </>
           <Menu
