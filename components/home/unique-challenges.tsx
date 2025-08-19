@@ -1,7 +1,6 @@
-import React from "react";
-import WidthConstraint from "../width-constraint";
 import Image from "next/image";
 import { solution } from "../../lib/constants";
+import WidthConstraint from "../width-constraint";
 
 const Solutions = () => {
   return (
@@ -12,10 +11,9 @@ const Solutions = () => {
             We understand that African face unique challenges
           </h3>
           <p className="sm:text-center text-lg sm:text-2xl lg:text-3xl leading-[38.3px] text-black lg:px-10">
-            From managing employee benefits to accessing fast, affordable
-            financing. Our mission is simple: deliver technology-driven
-            solutions that help businesses run smarter, pay faster, and retain
-            their best people.
+            From managing employee benefits to accessing fast, affordable financing. Our
+            mission is simple: deliver technology-driven solutions that help businesses
+            run smarter, pay faster, and retain their best people.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols- lg:grid-cols-3 px-5 gap-x-6 md:mx-7 gap-y-10">
@@ -28,12 +26,12 @@ const Solutions = () => {
                 <p className="leading-8 text-lg sm:text-xl lg:text-2xl text-white px-6 mb-2">
                   {item.title}
                 </p>
-                <p className="sm:text-xl text-primary-100 px-6">
-                  {item.description}
-                </p>
+                <p className="sm:text-xl text-primary-100 px-6">{item.description}</p>
                 <Image
                   src={item.imageSrc}
                   alt={item.imageAlt}
+                  width={300}
+                  height={300}
                   className="size-2/4 ml-auto md:mt-10 min-[350px]:max-[1024px]:size-2/3 lg:h-full"
                 />
               </div>

@@ -1,15 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import resolutLogo from "@/assets/resolut.svg?url";
 
 const Logo = () => {
   return (
     <Link href="/">
       <Image
-        src={resolutLogo}
+        src={"/assets/resolut.svg"}
         width={150}
         height={60}
-        alt="resolut-bussiness-solutions"
+        alt="Resolut Business Solutions"
       />
     </Link>
   );

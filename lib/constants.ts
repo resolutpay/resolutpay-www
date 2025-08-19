@@ -1,21 +1,3 @@
-import glo from "@/assets/brands/glo.svg?url";
-import globafin from "@/assets/brands/globafin.svg?url";
-import kalahari from "@/assets/brands/kalahari-resorts.svg?url";
-import loyalty from "@/assets/brands/loyalty-insurance.svg?url";
-import marcel from "@/assets/brands/marcel.svg?url";
-import cloud from "@/assets/illustrations/cloud.svg?url";
-import lightBulb2 from "@/assets/illustrations/light-bulb-2.svg?url";
-import bolt from "@/assets/illustrations/lightning.svg?url";
-import envelope from "@/assets/illustrations/mail.svg?url";
-import shield from "@/assets/illustrations/shield.svg?url";
-import user from "@/assets/illustrations/user.svg?url";
-import fire from "@/assets/illustrations/fire.svg?url";
-import star from "@/assets/illustrations/star.svg?url";
-import bulb from "@/assets/illustrations/light-bulb.svg?url";
-import instagram from "@/assets/icons/instagram.svg?url";
-import linkedIn from "@/assets/icons/linkedin.svg?url";
-import x from "@/assets/icons/x.svg?url";
-import meta from "@/assets/icons/meta.svg?url";
 import { FormDataType } from "./interface";
 
 export const navItems = [
@@ -29,65 +11,65 @@ export const navItems = [
 export const brands = [
   {
     name: "Glo",
-    logo: glo,
+    logo: "/assets/brands/glo.svg",
   },
   {
     name: "Globafin",
-    logo: globafin,
+    logo: "/assets/brands/globafin.svg",
   },
   {
     name: "Kalahari-Resorts",
-    logo: kalahari,
+    logo: "/assets/brands/kalahari-resorts.svg",
   },
   {
     name: "Loyalty-Insurance",
-    logo: loyalty,
+    logo: "/assets/brands/loyalty-insurance.svg",
   },
   {
     name: "Marcel",
-    logo: marcel,
+    logo: "/assets/brands/marcel.svg",
   },
 ];
 
 // WHY RESOLUT CARDS
 export const chooseResolutCards = [
   {
-    imgSrc: shield,
+    imgSrc: "/assets/illustrations/shield.svg",
     imgAlt: "Shield icon",
     title: "Hourly settlements",
     description:
       "Don't wait for days before you get settled. Get your money into your account every hour.",
   },
   {
-    imgSrc: bolt,
+    imgSrc: "/assets/illustrations/lightning.svg",
     imgAlt: "Lightning bolt icon",
     title: "Hourly settlements",
     description:
       "Don't wait for days before you get settled. Get your money into your account every hour.",
   },
   {
-    imgSrc: user,
+    imgSrc: "/assets/illustrations/user.svg",
     imgAlt: "User icon",
     title: "Hourly settlements",
     description:
       "Don't wait for days before you get settled. Get your money into your account every hour.",
   },
   {
-    imgSrc: envelope,
+    imgSrc: "/assets/illustrations/mail.svg",
     imgAlt: "Envelope icon",
     title: "Hourly settlements",
     description:
       "Don't wait for days before you get settled. Get your money into your account every hour.",
   },
   {
-    imgSrc: lightBulb2,
+    imgSrc: "/assets/illustrations/light-bulb-2.svg",
     imgAlt: "Light bulb icon",
     title: "Hourly settlements",
     description:
       "Don't wait for days before you get settled. Get your money into your account every hour.",
   },
   {
-    imgSrc: cloud,
+    imgSrc: "/assets/illustrations/cloud.svg",
     imgAlt: "Cloud icon",
     title: "Hourly settlements",
     description:
@@ -101,30 +83,28 @@ export const solution = [
     title: "Insurance",
     description:
       "We provide solutions for the insurance industry from broker to  underwriter to reinsurance",
-    imageSrc: fire,
+    imageSrc: "/assets/illustrations/fire.svg",
     imageAlt: "Fire",
   },
   {
     title: "SMEs",
-    description:
-      "Solving technology gaps for smalland medium scale enterprises",
-    imageSrc: star,
+    description: "Solving technology gaps for smalland medium scale enterprises",
+    imageSrc: "/assets/illustrations/star.svg",
     imageAlt: "Star",
   },
   {
     title: "Point of Sales",
-    description:
-      "Pay with card or mobile money and get your order delivered in minutes",
-    imageSrc: bulb,
+    description: "Pay with card or mobile money and get your order delivered in minutes",
+    imageSrc: "/assets/illustrations/light-bulb.svg",
     imageAlt: "Bulb",
   },
 ];
 // FOOTER SOCIAL MEDIA LINKS
 export const socials = [
-  { icon: instagram, label: "Instagram" },
-  { icon: linkedIn, label: "LinkedIn" },
-  { icon: x, label: "X/Twitter" },
-  { icon: meta, label: "Meta/Facebook" },
+  { icon: "/assets/icons/instagram.svg", label: "Instagram" },
+  { icon: "/assets/icons/linkedin.svg", label: "LinkedIn" },
+  { icon: "/assets/icons/x.svg", label: "X/Twitter" },
+  { icon: "/assets/icons/meta.svg", label: "Meta/Facebook" },
 ];
 
 // TEAM LIST

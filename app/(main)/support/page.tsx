@@ -1,11 +1,7 @@
-import WidthConstraint from "@/components/width-constraint";
-import React from "react";
-import pci from "@/assets/pci-insight.svg?url";
-import ring from "@/assets/head-ring.svg?url";
-import Image from "next/image";
-import GetInTouch from "@/components/support/get-in-touch-form";
 import FAQ from "@/components/support/faq";
-import circles from "@/assets/circles.svg?url";
+import GetInTouch from "@/components/support/get-in-touch-form";
+import WidthConstraint from "@/components/width-constraint";
+import Image from "next/image";
 import Link from "next/link";
 
 const Support = () => {
@@ -19,9 +15,21 @@ const Support = () => {
               Support
             </h1>
             <Link href={""}>
-              <Image src={pci} alt="Security Standards" className="mt-5" />
+              <Image
+                src="/assets/pci-insight.svg"
+                alt="Security Standards"
+                className="mt-5"
+                width={200}
+                height={100}
+              />
             </Link>
-            <Image src={ring} alt="ring" className="absolute scale-140" />
+            <Image
+              src="/assets/head-ring.svg"
+              alt="ring"
+              className="absolute scale-140"
+              width={300}
+              height={300}
+            />
           </div>
         </section>
 
@@ -32,8 +40,8 @@ const Support = () => {
               Get in Touch
             </h1>
             <p className="text-lg mt-2  sm:mt-6 sm:text-[32px] md:leading-[40px] text-black-400 max-w-[632px] sm:text-center">
-              Got Questions? Our team is happy to answer all your technical
-              questions. Please call us any time.
+              Got Questions? Our team is happy to answer all your technical questions.
+              Please call us any time.
             </p>
           </div>
           <GetInTouch />
@@ -43,17 +51,18 @@ const Support = () => {
       {/* FAQ */}
       <section className="pt-10 md:pt-16 mt-16 pb-48 bg-[linear-gradient(270deg,#21bbec_0%,#0068c9_39%,#130d3a_100%)] w-full relative overflow-hidden">
         <Image
-          src={circles}
+          src="/assets/circles.svg"
           alt="circles"
           className="absolute inset-x-3/5 -inset-y-1"
+          width={600}
+          height={600}
         />
         <WidthConstraint className="px-5 sm:px-10 lg:px-0">
           <h1 className="font-bold text-2xl sm:leading-[150%] text-primary-100 text-center md:text-7xl sm:text-5xl lg:text-8xl">
             Frequently Asked Questions
           </h1>
           <p className="text-sm mt-4 md:mt-0 sm:text-lg sm:leading-[150%] text-center text-black-100 font-light">
-            Still you have any questions? Contact our Team via
-            support@resolutfinance.com
+            Still you have any questions? Contact our Team via support@resolutfinance.com
           </p>
           <FAQ />
         </WidthConstraint>

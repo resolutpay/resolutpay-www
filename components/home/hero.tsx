@@ -1,10 +1,7 @@
-import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../ui/button";
-import Image from "next/image";
 import WidthConstraint from "../width-constraint";
-import standardImage from "@/assets/pci-insight.svg?url";
-import ring from "@/assets/head-ring.svg?url";
 
 const Hero = () => {
   return (
@@ -18,14 +15,15 @@ const Hero = () => {
             Empowering Africa with Smart Finance Solutions
           </h1>
           <p className="text-primary-black font-medium text-[32px] max-[554px]:mt-3 max-[554px]:text-xl md:leading-[120%] lg:w-11/12 ">
-            Provide innovative payment, payroll, and lending tools that help
-            companies streamline operations, empower employees, and grow
-            sustainably.
+            Provide innovative payment, payroll, and lending tools that help companies
+            streamline operations, empower employees, and grow sustainably.
           </p>
           <Image
-            src={ring}
+            src="/assets/head-ring.svg"
             alt="ring"
             className="absolute inset-y-0 min-[885]:-inset-y-6 min-[885]:inset-x-86 max-[884]:w-1/2"
+            width={300}
+            height={300}
           />
         </div>
         <div className="flex mt-12 justify-center gap-x-5 max-[305px]:flex-col max-[554px]:w-full max-[305px]:gap-y-5 sm:gap-10 md:mt-15">
@@ -37,7 +35,12 @@ const Hero = () => {
           </Button>
         </div>
         <Link href={""} className="max-[554px]:mt-10 mt-7 md:mt-25">
-          <Image src={standardImage} alt="Security standards" />
+          <Image
+            src="/assets/pci-insight.svg"
+            alt="Security standards"
+            width={200}
+            height={100}
+          />
         </Link>
       </section>
       ;

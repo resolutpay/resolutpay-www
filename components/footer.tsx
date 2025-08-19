@@ -1,10 +1,8 @@
-import React from "react";
-import WidthConstraint from "./width-constraint";
-import Image from "next/image";
-import resolutLogo from "@/assets/resolut.svg?url";
-import Link from "next/link";
 import { AtSign, Mail, Phone } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 import { socials } from "../lib/constants";
+import WidthConstraint from "./width-constraint";
 
 const Footer = () => {
   return (
@@ -14,7 +12,12 @@ const Footer = () => {
         {/* Column 1 */}
         <div className="w-full">
           <Link href={"/"}>
-            <Image src={resolutLogo} alt="Resolut Business Solutions" />
+            <Image
+              src="/assets/resolut.svg"
+              alt="Resolut Business Solutions"
+              width={150}
+              height={50}
+            />
           </Link>
         </div>
 
@@ -22,9 +25,7 @@ const Footer = () => {
         <div>
           {/* Row 1 */}
           <div className="text-primary-900 mb-[74px]">
-            <p className="font-bold text-[20px] leading-[24.2px] ">
-              Opening Hours
-            </p>
+            <p className="font-bold text-[20px] leading-[24.2px] ">Opening Hours</p>
             <p className="font-semibold text-2xl leading-[27.7px] mt-4">
               Mon - Fri 9:00 - 17:00
             </p>
@@ -37,9 +38,7 @@ const Footer = () => {
             <p className="font-bold text-[20px] leading-[24.2px] ">Contact</p>
             <div className="flex gap-3 mt-4">
               <Phone color="#063972" className="mt-0.5  min-w-7" />
-              <p className="font-semibold text-2xl leading-[27.7px]">
-                +233 59 664 3600
-              </p>
+              <p className="font-semibold text-2xl leading-[27.7px]">+233 59 664 3600</p>
             </div>
             <div className="flex mt-4 gap-3">
               <Mail color="#063972" className="mt-1 min-w-7" />
@@ -84,6 +83,8 @@ const Footer = () => {
                       src={social.icon}
                       alt={social.label}
                       className="scale-75 sm:scale-100 hover:drop-shadow-xl drop-shadow-black hover:scale-105 transition-all transform duration-500 ease-initial"
+                      width={24}
+                      height={24}
                     />
                   </Link>
                 );
@@ -95,8 +96,7 @@ const Footer = () => {
 
       <WidthConstraint className="mt-12 px-5 pb-10">
         <p className="text-sm leading-[21px] text-primary-900 text-center">
-          &copy; {new Date().getFullYear()} Resolut Business Solutions All
-          Rights Reserved
+          &copy; {new Date().getFullYear()} Resolut Business Solutions All Rights Reserved
         </p>
       </WidthConstraint>
     </footer>

@@ -125,7 +125,7 @@ const Header = () => {
   return (
     <header
       ref={navRef}
-      className={`fixed top-0 z-[20] w-screen overflow-clip pt-5 md:pt-6 ${
+      className={`fixed top-0 z-[20] w-screen overflow-clip py-4 ${
         isScrolled || check ? "bg-white dark:bg-black" : ""
       }`}
     >
