@@ -24,9 +24,9 @@ export default function Brands(): JSX.Element {
   }, []);
 
   return (
-    <section className="w-full px-5 overflow-x-clip flex flex-col items-center justify-center gap-10 pt-10 pb-5 md:py-10 ">
+    <section className="w-full px-5 overflow-x-clip flex flex-col items-center justify-center gap-10 pb-10 ">
       <WidthConstraint>
-        <h3 className="text-3xl md:text-5xl md:leading-[38.3px] font-bold mb-5 md:mb-11 text-center">
+        <h3 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center">
           Trusted by
         </h3>
         <div className="scroller" data-animated="true" data-speed="slow">

@@ -125,7 +125,7 @@ const Header = () => {
   return (
     <header
       ref={navRef}
-      className={`fixed top-0 z-[20] w-screen overflow-clip pt-5 md:pt-6 ${
+      className={`fixed top-0 z-[20] w-screen overflow-clip py-4 ${
         isScrolled || check ? "bg-white dark:bg-black" : ""
       }`}
     >
@@ -133,23 +133,15 @@ const Header = () => {
         <Logo />
         <NavBar />
         <div className="flex gap-4 pb-2">
-          <>
-            {/* Sign In Button */}
-            <Button
-              asChild
-              className="px-5 hidden lg:flex shadow-none text-base font-extrabold text-primary-900 hover:bg-transparent hover:text-primary-900/70"
-            >
+          <div className="gap-5 hidden lg:flex">
+            <Button asChild variant="link">
               <Link href="/auth/otp-verification">Login</Link>
             </Button>
 
-            {/* SignUP Button */}
-            <Button
-              asChild
-              className="px-7 py-3.5 hidden lg:flex bg-black-100 text-primary-900 font-extrabold rounded-4xl mr-2 hover:bg-black-200"
-            >
+            <Button asChild variant="ghost">
               <Link href="/auth/create-account">Get Started</Link>
             </Button>
-          </>
+          </div>
           <Menu
             size={30}
             onClick={() => setCheck(!check)}
