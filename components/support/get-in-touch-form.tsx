@@ -11,38 +11,12 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { formFields } from "@/lib/constants";
+import { getInTouchFormSchema } from "@/lib/schemas";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
-const getInTouchFormSchema = z
-  .object({
-    fullname: z
-      .string()
-      .trim()
-      .min(6, { message: "Full name must be at least 6 characters long." })
-      .max(50, { message: "Full name must be at most 50 characters long." }),
-
-    companyname: z
-      .string()
-      .trim()
-      .min(2, { message: "Company name must be at least 2 characters long." }),
-
-    email: z
-      .email({ message: "Please enter a valid email address." })
-      .toLowerCase()
-      .trim(),
-
-    message: z
-      .string()
-      .trim()
-      .min(5, { message: "Message must be at least 5 characters long." })
-      .max(500, { message: "Message must not exceed 500 characters." }),
-  })
-  .required();
-
 const GetInTouch = () => {
-  // Form Definition
   const getInTouchForm = useForm<z.infer<typeof getInTouchFormSchema>>({
     resolver: zodResolver(getInTouchFormSchema),
     mode: "onChange",
@@ -68,9 +42,9 @@ const GetInTouch = () => {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>
-                    <p className="sm:text-xl sm:leading-[31.1px] text-form-grey">
+                    <p className="sm:text-xl  text-form-grey">
                       {domain.label}
-                      <span className="text-asterik-red sm:text-2xl sm:leading-[40px] sm:mb-7 pl-1 sm:pl-0">
+                      <span className="text-asterik-red sm:text-2xl sm:mb-7 pl-1 sm:pl-0">
                         *
                       </span>
                     </p>
@@ -79,7 +53,7 @@ const GetInTouch = () => {
                     {domain.input ? (
                       <Input
                         {...field}
-                        className="border-0 rounded-none border-b-[1.5px] border-b-form-grey shadow-none md:text-xl md:leading-[31.1px] text-sm sm:text-base"
+                        className="border-0 rounded-none border-b-[1.5px] border-b-form-grey shadow-none md:text-xl text-sm sm:text-base"
                       />
                     ) : (
                       <Textarea
@@ -95,11 +69,7 @@ const GetInTouch = () => {
             />
           );
         })}
-        <Button
-          type="submit"
-          className="w-full max-w-52 bg-primary-color text-white rounded-[30px] border-0 text-base font-extrabold leading-[20.3px] max-[309px]:max-w-full max-[309px]:w-full max-[309px]:rounded-xl hover:bg-primary-color/40 disabled:bg-primary-color/30"
-          disabled={!isValid || isSubmitting}
-        >
+        <Button type="submit" disabled={!isValid || isSubmitting}>
           Send message
         </Button>
       </form>

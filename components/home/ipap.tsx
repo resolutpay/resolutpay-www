@@ -7,10 +7,10 @@ const Ipap = () => {
   return (
     <section className=" pt-10 sm:pt-20 md:pt-30 lg:pt-40 mt-16 bg-[linear-gradient(270deg,#21bbec_0%,#0068c9_39%,#130d3a_100%)] w-full relative overflow-hidden">
       <WidthConstraint className="max-[1266px]:px-10 flex flex-col items-center text-center sm:text-left sm:block">
-        <Button className="max-w-40 rounded-[30px] bg-black-100 px-10 py-3.5 font-extrabold text-base leading-[20.3px] text-primary-900 hover:text-primary-900 hover:bg-gray-300">
-          <Link href={""}> Introducing</Link>
+        <Button className="bg-black-100 text-primary-900 hover:text-primary-900 hover:bg-gray-300">
+          Introducing
         </Button>
-        <h4 className="md:mt-10 mt-5 font-canaro-local font-medium text-xl sm:text-4xl md:text-4xl lg:text-6xl leading-normal sm:leading-[65px] -tracking-[2px] text-white sm:max-w-3/5">
+        <h4 className="md:mt-10 mt-5 font-canaro-local font-medium text-xl sm:text-4xl md:text-4xl lg:text-6xl text-white sm:max-w-3/5">
           Insurance Product Aggregator Platform
         </h4>
         <p className="mt-6 text-black-100 md:max-w-2/4 opacity-60">
@@ -27,7 +27,7 @@ const Ipap = () => {
         <div className="mt-5 sm:mt-15 pb-15 sm:pb-[30vw]">
           <Link
             href={""}
-            className="text-white font-extrabold text-xl sm:text-3xl md:text-4xl lg:text-5xl leading-[20.3px] animate-pulse hover:underline"
+            className="text-white font-extrabold text-xl sm:text-3xl md:text-4xl lg:text-5xl hover:underline"
           >
             www.ipap.resolutfinance.com
           </Link>

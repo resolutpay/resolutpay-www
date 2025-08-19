@@ -1,14 +1,6 @@
 "use client";
 
-import * as React from "react";
-import { Check, ChevronsUpDown, Globe } from "lucide-react";
-import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
 import {
   Command,
   CommandEmpty,
@@ -17,8 +9,12 @@ import {
   CommandItem,
   CommandList,
 } from "@/components/ui/command";
-import { CountryComboBoxProps } from "@/lib/interface";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { countries } from "@/lib/countries";
+import { CountryComboBoxProps } from "@/lib/interface";
+import { cn } from "@/lib/utils";
+import { Check, ChevronsUpDown } from "lucide-react";
+import * as React from "react";
 
 export default function CountryComboBox({
   value,
@@ -39,13 +35,11 @@ export default function CountryComboBox({
           variant="outline"
           role="combobox"
           className={cn(
-            "w-full h-10 border border-[#E7E7E7] rounded-sm justify-between text-[#57584E] leading-5 px-2 mb-3.5",
+            "w-full h-10 border border-[#E7E7E7] rounded-sm justify-between text-[#57584E] px-2 mb-3.5",
             !value && "text-muted-foreground"
           )}
         >
-          {value
-            ? countries.find((c) => c.code === value)?.label
-            : "Select country..."}
+          {value ? countries.find((c) => c.code === value)?.label : "Select country..."}
           <ChevronsUpDown color="#57584E" className="opacity-100" />
           {/* <Globe /> */}
         </Button>

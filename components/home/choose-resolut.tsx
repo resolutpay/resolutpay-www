@@ -4,33 +4,27 @@ import WidthConstraint from "../width-constraint";
 
 const ChooseResolut = () => {
   return (
-    <WidthConstraint>
-      <section className="py-20 lg:py-32">
-        <h3 className="font-bold text-3xl sm:text-[40px] text-primary-900 mb-10 text-center md:mb-16">
+    <section className="py-20 lg:py-32">
+      <WidthConstraint className="space-y-10">
+        <h3 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center text-primary-900">
           Why choose ReSolut
         </h3>
-        <div className="grid min-[557px]:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-8 px-5">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-10 lg:gap-16">
           {chooseResolutCards.map((card, index) => {
             return (
               <div
                 key={index}
-                className="mx-auto space-y-2 max-w-[392px] flex flex-col sm:block justify-center items-center text-center sm:text-left"
+                className="mx-auto space-y-2 max-w-[392px] flex flex-col items-center justify-center text-center"
               >
-                <div className="flex w-full justify-center md:max-w-4/5">
-                  <Image src={card.imgSrc} alt={card.imgAlt} width={100} height={100} />
-                </div>
-                <p className="font-medium text-2xl text-primary-900 md:text-center md:max-w-4/5">
-                  {card.title}
-                </p>
-                <p className="text-feminine-gray md:max-w-4/5 text-center">
-                  {card.description}
-                </p>
+                <Image src={card.imgSrc} alt={card.imgAlt} width={100} height={100} />
+                <p className="font-medium text-2xl text-primary-900">{card.title}</p>
+                <p className="text-feminine-gray">{card.description}</p>
               </div>
             );
           })}
         </div>
-      </section>
-    </WidthConstraint>
+      </WidthConstraint>
+    </section>
   );
 };
 

@@ -18,7 +18,7 @@ const PageHeader = ({
     <div className={cn(usePadding && "py-20 lg:py-32")}>
       <div className="relative flex flex-col items-center">
         <div className="space-y-3">
-          <h1 className="font-canaro-local font-medium sm:leading-[117%] text-4xl sm:text-6xl md:text-7xl text-primary-900 text-center">
+          <h1 className="font-canaro-local font-medium text-4xl sm:text-6xl md:text-7xl text-primary-900 text-center">
             {title}
           </h1>
           {description && (
