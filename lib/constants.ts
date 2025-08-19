@@ -290,3 +290,18 @@ export const formData: FormDataType[] = [
     type: "developer",
   },
 ];
+
+export const ABOUT_US_FLEX_ITEMS = [
+  {
+    image: "/assets/illustrations/rocket.svg",
+    title: "Our Vision",
+    description:
+      "To become a global leader in digital financial innovation, seamlessly integrating financial solutions across industries and geographies, while empowering individuals and businesses to achieve financial health and prosperity.",
+  },
+  {
+    image: "/assets/illustrations/bulb-mission.svg",
+    title: "Our Mission",
+    description:
+      "To revolutionize the global financial ecosystem by delivering accessible, innovative, and customer-centric digital solutions that simplify financial management, enhance liquidity, and unlock the full potential of financial well-being for all.",
+  },
+];

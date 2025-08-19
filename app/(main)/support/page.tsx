@@ -1,45 +1,20 @@
 import FAQ from "@/components/support/faq";
 import GetInTouch from "@/components/support/get-in-touch-form";
+import PageHeader from "@/components/ui/page-header";
 import WidthConstraint from "@/components/width-constraint";
 import Image from "next/image";
-import Link from "next/link";
 
 const Support = () => {
   return (
-    <>
-      <WidthConstraint className="overflow-hidden px-5 sm:px-10 lg:px-0">
-        {/* Support */}
-        <section className=" mt-35 sm:mt-48 px-5 flex flex-col items-center">
-          <div className="relative flex flex-col items-center">
-            <h1 className="font-canaro-local font-medium md:leading-[117%] text-4xl sm:text-6xl md:text-7xl text-primary-900 text-center mb-8 md:mb-10">
-              Support
-            </h1>
-            <Link href={""}>
-              <Image
-                src="/assets/pci-insight.svg"
-                alt="Security Standards"
-                className="mt-5"
-                width={200}
-                height={100}
-              />
-            </Link>
-            <Image
-              src="/assets/head-ring.svg"
-              alt="ring"
-              className="absolute scale-140"
-              width={300}
-              height={300}
-            />
-          </div>
-        </section>
-
-        {/* Get In Touch Form */}
-        <section className=" mt-10 sm:mt-32 md:mt-40 lg:mt-[168px] max-w-[907px] mx-auto">
-          <div className=" mb-8 sm:mb-14">
-            <h1 className="text-center font-bold text-4xl sm:text-5xl md:text-7xl lg:text-8xl md:-tracking-[2%]">
+    <section className="py-20 lg:py-32">
+      <WidthConstraint className="pb-20">
+        <PageHeader title="Support" />
+        <section className="max-w-3xl space-y-10 mx-auto">
+          <div className="space-y-4">
+            <h1 className="text-center font-bold text-5xl md:text-6xl lg:text-8xl ">
               Get in Touch
             </h1>
-            <p className="text-lg mt-2  sm:mt-6 sm:text-[32px] md:leading-[40px] text-black-400 max-w-[632px] sm:text-center">
+            <p className="text-xl md:text-2xl xl:text-3xl text-black-400 max-w-2xl mx-auto text-center">
               Got Questions? Our team is happy to answer all your technical questions.
               Please call us any time.
             </p>
@@ -48,26 +23,25 @@ const Support = () => {
         </section>
       </WidthConstraint>
 
-      {/* FAQ */}
-      <section className="pt-10 md:pt-16 mt-16 pb-48 bg-[linear-gradient(270deg,#21bbec_0%,#0068c9_39%,#130d3a_100%)] w-full relative overflow-hidden">
+      <section className="bg-[linear-gradient(270deg,#21bbec_0%,#0068c9_39%,#130d3a_100%)] w-full relative overflow-hidden py-20 lg:py-32">
         <Image
           src="/assets/circles.svg"
           alt="circles"
-          className="absolute inset-x-3/5 -inset-y-1"
+          className="absolute top-0 right-0"
           width={600}
           height={600}
         />
-        <WidthConstraint className="px-5 sm:px-10 lg:px-0">
-          <h1 className="font-bold text-2xl sm:leading-[150%] text-primary-100 text-center md:text-7xl sm:text-5xl lg:text-8xl">
+        <WidthConstraint className="space-y-2">
+          <h1 className="font-bold text-3xl md:text-6xl lg:text-7xl text-primary-100 text-center ">
             Frequently Asked Questions
           </h1>
-          <p className="text-sm mt-4 md:mt-0 sm:text-lg sm:leading-[150%] text-center text-black-100 font-light">
+          <p className="text-lg text-center text-black-100 font-light">
             Still you have any questions? Contact our Team via support@resolutfinance.com
           </p>
           <FAQ />
         </WidthConstraint>
       </section>
-    </>
+    </section>
   );
 };
 

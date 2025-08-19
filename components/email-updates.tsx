@@ -1,12 +1,4 @@
 "use client";
-import React from "react";
-import WidthConstraint from "./width-constraint";
-import { Button } from "./ui/button";
-import { ArrowRight } from "lucide-react";
-import { Input } from "../components/ui/input";
-import { z } from "zod/v4";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
 import {
   Form,
   FormControl,
@@ -14,6 +6,13 @@ import {
   FormItem,
   FormMessage,
 } from "@/components/ui/form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { ArrowRight } from "lucide-react";
+import { useForm } from "react-hook-form";
+import { z } from "zod/v4";
+import { Input } from "../components/ui/input";
+import { Button } from "./ui/button";
+import WidthConstraint from "./width-constraint";
 
 // Form Schema
 const emailFormSchema = z
@@ -37,14 +36,14 @@ const EmailUpdates = () => {
   return (
     <WidthConstraint>
       {/* LATEST UPDATE SECTION */}
-      <section className="px-5 mt-24 sm:mt-32 md:mt-36 lg:mt-40 flex flex-col justify-center items-center">
-        <div className="text-center">
-          <h1 className="font-black sm:text-5xl text-3xl md:text-7xl lg:text-[80px] md:leading-[67.2px] -tracking-[0.58px]">
+      <section className="px-5 py-20 lg:py-32 flex flex-col justify-center items-center">
+        <div className="text-center space-y-4">
+          <h1 className="font-black sm:text-5xl text-3xl lg:text-7xl -tracking-[0.58px]">
             Get Our Latest Updates
           </h1>
-          <p className="text-xl sm:text-2xl md:text-[32px] md:leading-[32px] -tracing-[0.2px] mt-4 sm:mt-6">
-            We are working on some awesome product. Be the first to know when
-            they are ready
+          <p className="text-xl md:text-2xl xl:text-3xl mx-auto max-w-2xl">
+            We are working on some awesome product. Be the first to know when they are
+            ready
           </p>
         </div>
 
@@ -68,8 +67,7 @@ const EmailUpdates = () => {
                     <Button
                       type="submit"
                       disabled={
-                        !emailForm.formState.isValid ||
-                        emailForm.formState.isSubmitting
+                        !emailForm.formState.isValid || emailForm.formState.isSubmitting
                       }
                       className="flex justify-center items-center max-w-[154px] py-[14.5px] px-4 sm:px-7 bg-primary-color text-white rounded-[30px] border-0 text-base font-extrabold leading-[20.3px] max-[309px]:max-w-full max-[309px]:w-full max-[309px]:rounded-xl hover:bg-primary-color/40 disabled:bg-primary-color/30"
                     >

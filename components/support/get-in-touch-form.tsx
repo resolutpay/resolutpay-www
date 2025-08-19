@@ -1,8 +1,4 @@
 "use client";
-import React from "react";
-import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -15,6 +11,9 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { formFields } from "@/lib/constants";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
 
 const getInTouchFormSchema = z
   .object({
@@ -59,10 +58,7 @@ const GetInTouch = () => {
   function onSubmit(values: z.infer<typeof getInTouchFormSchema>) {}
   return (
     <Form {...getInTouchForm}>
-      <form
-        onSubmit={getInTouchForm.handleSubmit(onSubmit)}
-        className="space-y-8"
-      >
+      <form onSubmit={getInTouchForm.handleSubmit(onSubmit)} className="space-y-8">
         {formFields.map((domain, index) => {
           return (
             <FormField
@@ -101,7 +97,7 @@ const GetInTouch = () => {
         })}
         <Button
           type="submit"
-          className="w-full  text-base max-w-52 bg-black disabled:bg-black/50 disabled:text-white py-3 sm:px-6 sm:py-[18px] font-bold text-cyan-900 sm:text-2xl disabled:font-medium lg:mt-10 hover:scale-90 transition-transform transform duration-500 ease-in-out"
+          className="w-full max-w-52 bg-primary-color text-white rounded-[30px] border-0 text-base font-extrabold leading-[20.3px] max-[309px]:max-w-full max-[309px]:w-full max-[309px]:rounded-xl hover:bg-primary-color/40 disabled:bg-primary-color/30"
           disabled={!isValid || isSubmitting}
         >
           Send message

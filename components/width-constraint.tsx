@@ -6,7 +6,7 @@ export default function WidthConstraint(props: {
   className?: string;
 }): ReactNode {
   return (
-    <div className={cn("max-w-[1250px] mx-auto", props.className)}>
+    <div className={cn("max-w-[1250px] mx-auto px-5", props.className)}>
       {props.children}
     </div>
   );
