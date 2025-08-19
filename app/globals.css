@@ -250,3 +250,7 @@
     opacity: 0;
   }
 }
+
+.hide-accordion-chevron > svg {
+  display: none;
+}

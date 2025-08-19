@@ -6,7 +6,7 @@ const Logo = () => {
     <Link href="/">
       <Image
         src={"/assets/resolut.svg"}
-        width={150}
+        width={180}
         height={60}
         alt="Resolut Business Solutions"
       />
