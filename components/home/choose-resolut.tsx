@@ -15,15 +15,11 @@ const ChooseResolut = () => {
             return (
               <div
                 key={index}
-                className="mx-auto max-w-[392px] flex flex-col sm:block justify-center items-center text-center sm:text-left group"
+                className="mx-auto max-w-[392px] flex flex-col sm:block justify-center items-center text-center sm:text-left"
               >
                 <div className="flex w-full justify-center md:max-w-4/5 bg-amber-30">
                   {" "}
-                  <Image
-                    src={card.imgSrc}
-                    alt={card.imgAlt}
-                    className="group-hover:animate-[spin_1s_linear_1] transform transition-all duration-700 ease-initial"
-                  />
+                  <Image src={card.imgSrc} alt={card.imgAlt} />
                 </div>
                 <p className="font-medium text-2xl text-primary-900 mt-2 md:text-center md:max-w-4/5">
                   {card.title}

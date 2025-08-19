@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import Image from "next/image";
-import landingPage from "@/assets/landing-page.svg?url";
 import EmailUpdates from "@/components/email-updates";
 
 export const metadata: Metadata = {
@@ -10,25 +8,17 @@ export const metadata: Metadata = {
   description: "",
 };
 
-export default function RootLayout({
+export default function HomeLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="flex flex-col min-h-dvh">
-        {/* Background Image */}
-        <Image
-          src={landingPage}
-          alt=""
-          className="absolute -top-5 -z-50 w-full"
-        />
-        <Header />
-        <main className="flex-1">{children}</main>
-        <EmailUpdates />
-        <Footer />
-      </body>
-    </html>
+    <div className="bg-[url('/landing-page.svg')] bg-no-repeat bg-center min-h-screen bg-cover flex flex-col">
+      <Header />
+      <main className="flex-1">{children}</main>
+      <EmailUpdates />
+      <Footer />
+    </div>
   );
 }

@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${grotesque.className} ${canaro.variable} relative`}>
+      <body className={`${grotesque.className} ${canaro.variable}`}>
         {children}
       </body>
     </html>

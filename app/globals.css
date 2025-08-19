@@ -194,7 +194,7 @@
   }
 }
 
-/* Brand Marquee Animations */
+/* Brand Marquee Animations Base */
 @keyframes marquee {
   0% {
     transform: translateX(0);
@@ -209,7 +209,7 @@
 .animate-pause:hover {
   animation-play-state: paused;
 }
-/* Alternative faster version */
+/* Brand Marquee Animations Faster Version */
 @keyframes marquee-fast {
   0% {
     transform: translateX(0);
@@ -221,7 +221,7 @@
 .animate-marquee-fast {
   animation: marquee-fast 25s linear infinite;
 }
-/* Reverse direction option */
+/* Brand Marquee Animations Reverse Direction*/
 @keyframes marquee-reverse {
   0% {
     transform: translateX(-50%);
@@ -232,4 +232,27 @@
 }
 .animate-marquee-reverse {
   animation: marquee-reverse 40s linear infinite;
+}
+
+/* FAQ Accordion */
+@keyframes accordion-down {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+    opacity: 1;
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+    opacity: 1;
+  }
+  to {
+    height: 0;
+    opacity: 0;
+  }
 }

@@ -6,6 +6,7 @@ import Image from "next/image";
 import GetInTouch from "@/components/support/get-in-touch-form";
 import FAQ from "@/components/support/faq";
 import circles from "@/assets/circles.svg?url";
+import Link from "next/link";
 
 const Support = () => {
   return (
@@ -14,10 +15,12 @@ const Support = () => {
         {/* Support */}
         <section className=" mt-35 sm:mt-48 px-5 flex flex-col items-center">
           <div className="relative flex flex-col items-center">
-            <h1 className="font-canaro-local font-medium md:leading-[117%] text-4xl sm:text-6xl md:text-7xl text-primary-900 text-center mb-8 md:mb-0">
+            <h1 className="font-canaro-local font-medium md:leading-[117%] text-4xl sm:text-6xl md:text-7xl text-primary-900 text-center mb-8 md:mb-10">
               Support
             </h1>
-            <Image src={pci} alt="Security Standards" className="mt-5" />
+            <Link href={""}>
+              <Image src={pci} alt="Security Standards" className="mt-5" />
+            </Link>
             <Image src={ring} alt="ring" className="absolute scale-140" />
           </div>
         </section>

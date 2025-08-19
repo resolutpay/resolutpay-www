@@ -23,18 +23,18 @@ const Solutions = () => {
             return (
               <div
                 key={index}
-                className="bg-primary-800 text-primary-100 flex flex-col justify-between rounded-[20px] pt-10 sm:pt-16 max-w-lg overflow-hidden mx-auto hover:scale-90 transform transition-all duration-700 ease-in-out hover:shadow-lg hover:shadow-black"
+                className="bg-primary-800 text-primary-100 flex flex-col justify-between rounded-[20px] pt-10 sm:pt-16 max-w-[370px] overflow-hidden mx-auto hover:scale-90 transform transition-all duration-700 ease-in-out hover:shadow-lg hover:shadow-black"
               >
-                <p className="leading-[36px] text-lg sm:text-xl lg:text-2xl text-white px-6 mb-2">
+                <p className="leading-8 text-lg sm:text-xl lg:text-2xl text-white px-6 mb-2">
                   {item.title}
                 </p>
-                <p className="sm:text-xl leading-[30px] text-primary-100 px-6">
+                <p className="sm:text-xl text-primary-100 px-6">
                   {item.description}
                 </p>
                 <Image
                   src={item.imageSrc}
                   alt={item.imageAlt}
-                  className="size-2/4 ml-auto md:mt-10 min-[350px]:max-[1024px]:size-2/3"
+                  className="size-2/4 ml-auto md:mt-10 min-[350px]:max-[1024px]:size-2/3 lg:h-full"
                 />
               </div>
             );

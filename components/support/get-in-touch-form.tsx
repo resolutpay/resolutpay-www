@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  //   FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -102,7 +101,7 @@ const GetInTouch = () => {
         })}
         <Button
           type="submit"
-          className="w-full rounded-md text-base sm:rounded-none max-w-52 enabled:bg-gradient-to-r from-[#2A7B9B] via-[#57C75D] to-[#18DEC7] disabled:bg-black disabled:text-white py-3 sm:px-6 sm:py-[18px] font-bold text-cyan-900 sm:text-2xl disabled:font-medium lg:mt-10 hover:scale-90 transition-transform transform duration-500 ease-in-out"
+          className="w-full  text-base max-w-52 bg-black disabled:bg-black/50 disabled:text-white py-3 sm:px-6 sm:py-[18px] font-bold text-cyan-900 sm:text-2xl disabled:font-medium lg:mt-10 hover:scale-90 transition-transform transform duration-500 ease-in-out"
           disabled={!isValid || isSubmitting}
         >
           Send message
