@@ -29,7 +29,7 @@ export default function AuthenticationLayout({
             </p>
             <Button className=" border-0 rounded-[30px] bg-[#00a1ff] px-[17px] py-3 flex justify-center gap-1  hover:bg-blue-400 hover:font-extrabold transition-all duration-500 ease-in-out group max-[600px]:mt-10 min-[600px]:max-[800px]:mt-5">
               <Link
-                href={""}
+                href={"/"}
                 className="font-medium text-sm text-center leading-5 group-hover:font-extrabold"
               >
                 Learn More
