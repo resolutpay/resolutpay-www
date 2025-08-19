@@ -32,13 +32,13 @@ export const PhoneInput = React.forwardRef<HTMLInputElement, PhoneInputProps>(
             <Button
               variant="outline"
               role="combobox"
-              className="gap-0 px-1 font-inter h-10 rounded-[5px] text-[#57584E]"
+              className="gap-0 px-1 h-10 rounded-[5px] text-[#57584E]"
             >
               {selected ? selected.dialCode : "+1"}
               <ChevronDown className="size-5 shrink-0 opacity-70" />
             </Button>
           </PopoverTrigger>
-          <PopoverContent className="p-0 transform  max-[605px]:translate-x-5 max-[300px]:max-w-[60%] sm:translate-x-[57%] w-3/4 font-inter text-[#57584E]">
+          <PopoverContent className="p-0 transform  max-[605px]:translate-x-5 max-[300px]:max-w-[60%] sm:translate-x-[57%] w-3/4 text-[#57584E]">
             <Command>
               <CommandInput placeholder="Search country..." />
               <CommandList>
@@ -72,7 +72,7 @@ export const PhoneInput = React.forwardRef<HTMLInputElement, PhoneInputProps>(
         <Input
           ref={ref}
           name={name}
-          className="flex-1 h-10 px-2 font-inter text-[#57584E] rounded-[5px]"
+          className="flex-1 h-10 px-2 text-[#57584E] rounded-[5px]"
           value={value.number}
           onChange={(e) =>
             onChange({

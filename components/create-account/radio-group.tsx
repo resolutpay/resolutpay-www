@@ -1,8 +1,6 @@
 "use client";
-
 import * as React from "react";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import * as RadioGroupPrimitive from "@radix-ui/react-radio-group";
 
 import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
@@ -20,7 +18,7 @@ export const RadioGroupField = React.forwardRef<
       ref={ref}
       value={value}
       onValueChange={onChange}
-      className={cn("space-y-4 font-inter text-[#57584E]", className)}
+      className={cn("space-y-4 text-[#57584E]", className)}
       {...props}
     >
       {options.map((opt) => (

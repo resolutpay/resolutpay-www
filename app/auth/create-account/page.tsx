@@ -19,7 +19,6 @@ import { PhoneInput } from "@/components/create-account/phone-input";
 import { PasswordInput } from "@/components/create-account/password-input";
 import { RadioGroupField } from "@/components/create-account/radio-group";
 import { formData } from "@/lib/constants";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 const createAccountSchema = z
@@ -109,7 +108,7 @@ const CreateAccount = () => {
             name={domain.id}
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="font-inter font-semibold leading-5 text-sm text-[#57584E] mb-1 flex justify-between">
+                <FormLabel className="font-semibold leading-5 text-sm text-[#57584E] mb-1 flex justify-between">
                   {domain.label}{" "}
                   {domain.id === "country" ? (
                     <Link href={""} className="text-[#3676C8]">
@@ -165,7 +164,7 @@ const CreateAccount = () => {
                       value={field.value as string}
                       onChange={(val) => field.onChange(val)}
                       options={businessTypeOptions}
-                      className={`font-inter text-[#57584E] pt-5 mb-2`}
+                      className={`text-[#57584E] pt-5 mb-2`}
                     />
                   )}
                 </FormControl>
@@ -180,7 +179,7 @@ const CreateAccount = () => {
                     />
                   )}
                 </FormControl>
-                <FormMessage className="font-inter font-medium pb-3" />
+                <FormMessage className="font-medium pb-3" />
               </FormItem>
             )}
           />

@@ -3,21 +3,21 @@ import WidthConstraint from "../width-constraint";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import Image from "next/image";
-import groupMobile from "../../public/assets/group-mobile.svg";
-import group from "../../public/assets/group.svg";
-import wave from "../../public/assets/wave.svg";
+import groupMobile from "@/assets/group-mobile.svg?url";
+import group from "@/assets/group.svg?url";
+import wave from "@/assets/wave.svg?url";
 
 const Ipap = () => {
   return (
     <section className=" pt-10 sm:pt-20 md:pt-30 lg:pt-40 mt-16 bg-[linear-gradient(270deg,#21bbec_0%,#0068c9_39%,#130d3a_100%)] w-full relative overflow-hidden">
       <WidthConstraint className="max-[1266px]:px-10 flex flex-col items-center text-center sm:text-left sm:block">
-        <Button className="max-w-40 rounded-[30px] bg-black-100 px-10 py-3.5 font-extrabold text-base leading-[20.3px] text-primary-900 hover:scale-125 hover:bg-white hover:text-black hover:text-lg hover:-rotate-12 transition-all transform duration-700 ease-initial ">
+        <Button className="max-w-40 rounded-[30px] bg-black-100 px-10 py-3.5 font-extrabold text-base leading-[20.3px] text-primary-900 hover:text-primary-900 hover:bg-gray-300">
           <Link href={""}> Introducing</Link>
         </Button>
         <h4 className="md:mt-10 mt-5 font-canaro-local font-medium text-xl sm:text-4xl md:text-4xl lg:text-6xl leading-normal sm:leading-[65px] -tracking-[2px] text-white sm:max-w-3/5">
           Insurance Product Aggregator Platform
         </h4>
-        <p className="mt-6 font-sans text-black-100 md:max-w-2/4 opacity-60">
+        <p className="mt-6 text-black-100 md:max-w-2/4 opacity-60">
           You have the freedom to personalize the design of your credit card,
           ensuring a truly unique experience that makes you feel extraordinary
         </p>

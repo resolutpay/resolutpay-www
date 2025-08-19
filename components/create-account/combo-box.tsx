@@ -39,7 +39,7 @@ export default function CountryComboBox({
           variant="outline"
           role="combobox"
           className={cn(
-            "w-full h-10 border border-[#E7E7E7] rounded-sm justify-between font-inter text-[#57584E] leading-5 px-2 mb-3.5",
+            "w-full h-10 border border-[#E7E7E7] rounded-sm justify-between text-[#57584E] leading-5 px-2 mb-3.5",
             !value && "text-muted-foreground"
           )}
         >
@@ -51,10 +51,10 @@ export default function CountryComboBox({
         </Button>
       </PopoverTrigger>
       <PopoverContent className="max-[270px]:w-4/5 max-[270px]:ml-2 max-w-[250px] p-0 text-[#57584E]">
-        <Command className="font-inter text-[#57584E]">
+        <Command className="text-[#57584E]">
           <CommandInput
             placeholder="Search country..."
-            className="h-9 font-inter placeholder:text-[#57584E]"
+            className="h-9 placeholder:text-[#57584E]"
           />
           <CommandList>
             <CommandEmpty>No country found.</CommandEmpty>

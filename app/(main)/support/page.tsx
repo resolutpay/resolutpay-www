@@ -1,11 +1,12 @@
 import WidthConstraint from "@/components/width-constraint";
 import React from "react";
-import pci from "@/public/assets/pci-insight.svg";
-import ring from "@/public/assets/head-ring.svg";
+import pci from "@/assets/pci-insight.svg?url";
+import ring from "@/assets/head-ring.svg?url";
 import Image from "next/image";
 import GetInTouch from "@/components/support/get-in-touch-form";
 import FAQ from "@/components/support/faq";
-import circles from "@/public/assets/circles.svg";
+import circles from "@/assets/circles.svg?url";
+import Link from "next/link";
 
 const Support = () => {
   return (
@@ -14,10 +15,12 @@ const Support = () => {
         {/* Support */}
         <section className=" mt-35 sm:mt-48 px-5 flex flex-col items-center">
           <div className="relative flex flex-col items-center">
-            <h1 className="font-canaro-local font-medium md:leading-[117%] text-4xl sm:text-6xl md:text-7xl text-primary-900 text-center mb-8 md:mb-0">
+            <h1 className="font-canaro-local font-medium md:leading-[117%] text-4xl sm:text-6xl md:text-7xl text-primary-900 text-center mb-8 md:mb-10">
               Support
             </h1>
-            <Image src={pci} alt="Security Standards" className="mt-5" />
+            <Link href={""}>
+              <Image src={pci} alt="Security Standards" className="mt-5" />
+            </Link>
             <Image src={ring} alt="ring" className="absolute scale-140" />
           </div>
         </section>
@@ -48,7 +51,7 @@ const Support = () => {
           <h1 className="font-bold text-2xl sm:leading-[150%] text-primary-100 text-center md:text-7xl sm:text-5xl lg:text-8xl">
             Frequently Asked Questions
           </h1>
-          <p className="text-sm mt-4 md:mt-0 sm:text-lg sm:leading-[150%] text-center text-black-100 font-lexend font-light">
+          <p className="text-sm mt-4 md:mt-0 sm:text-lg sm:leading-[150%] text-center text-black-100 font-light">
             Still you have any questions? Contact our Team via
             support@resolutfinance.com
           </p>

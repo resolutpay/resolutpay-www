@@ -1,24 +1,21 @@
 import React from "react";
 import WidthConstraint from "./width-constraint";
 import Image from "next/image";
-import resolutLogo from "../public/assets/resolut.svg";
+import resolutLogo from "@/assets/resolut.svg?url";
 import Link from "next/link";
 import { AtSign, Mail, Phone } from "lucide-react";
 import { socials } from "../lib/constants";
-import dora from "../public/assets/dora-footer.svg";
 
 const Footer = () => {
   return (
-    <footer className="mt-auto bg-[url('/assets/dora-footer.svg')] bg-no-repeat bg-right-bottom bg-size-[50%_100%] pt-40">
+    <footer className={`mt-auto pt-40`}>
       {/* Grid Layout Container - 3 Columns*/}
       <WidthConstraint className="px-5 grid grid-cols-1 sm:grid-cols-3 gap-[74px] justify-center">
         {/* Column 1 */}
         <div className="w-full">
-          <Image
-            src={resolutLogo}
-            alt="Resolut Business Solutions"
-            className="transition-all duration-300 hover:scale-110 hover:rotate-3 hover:drop-shadow-lg transform-gpu"
-          />
+          <Link href={"/"}>
+            <Image src={resolutLogo} alt="Resolut Business Solutions" />
+          </Link>
         </div>
 
         {/* Column 2 */}
@@ -51,10 +48,13 @@ const Footer = () => {
               </p>
             </div>
             <div className="flex gap-3 mt-4">
-              <AtSign color="#063972" className="mt-1  min-[273px]:min-w-7" />
+              <AtSign
+                color="#063972"
+                className="mt-1  min-[273px]:min-w-7 max-[261px]:hidden"
+              />
               <Link
                 href={""}
-                className="font-semibold text-2xl leading-[27.7px] hover:underline"
+                className="font-semibold text-2xl leading-[27.7px] hover:underline max-[273px]:text-lg"
               >
                 hi@resolutfinance.com
               </Link>
@@ -83,7 +83,7 @@ const Footer = () => {
                     <Image
                       src={social.icon}
                       alt={social.label}
-                      className="scale-75 sm:scale-100 hover:drop-shadow-xl drop-shadow-black hover:animate-bounce hover:scale-90 transition-all transform duration-500 ease-initial"
+                      className="scale-75 sm:scale-100 hover:drop-shadow-xl drop-shadow-black hover:scale-105 transition-all transform duration-500 ease-initial"
                     />
                   </Link>
                 );
@@ -94,7 +94,7 @@ const Footer = () => {
       </WidthConstraint>
 
       <WidthConstraint className="mt-12 px-5 pb-10">
-        <p className="font-auxilary text-sm leading-[21px] text-primary-900 text-center">
+        <p className="text-sm leading-[21px] text-primary-900 text-center">
           &copy; {new Date().getFullYear()} Resolut Business Solutions All
           Rights Reserved
         </p>
