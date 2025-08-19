@@ -48,7 +48,7 @@ const Support = () => {
           <h1 className="font-bold text-2xl sm:leading-[150%] text-primary-100 text-center md:text-7xl sm:text-5xl lg:text-8xl">
             Frequently Asked Questions
           </h1>
-          <p className="text-sm mt-4 md:mt-0 sm:text-lg sm:leading-[150%] text-center text-black-100 font-lexend font-light">
+          <p className="text-sm mt-4 md:mt-0 sm:text-lg sm:leading-[150%] text-center text-black-100 font-light">
             Still you have any questions? Contact our Team via
             support@resolutfinance.com
           </p>

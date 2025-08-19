@@ -7,7 +7,7 @@ const ChooseResolut = () => {
   return (
     <WidthConstraint>
       <section className="mt-20 sm:mt-48">
-        <h3 className="font-tertiary font-bold text-3xl sm:text-[40px] text-primary-900 mb-10 text-center md:mb-16">
+        <h3 className="font-bold text-3xl sm:text-[40px] text-primary-900 mb-10 text-center md:mb-16">
           Why choose ReSolut
         </h3>
         <div className="grid min-[557px]:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-8 px-5">
@@ -25,10 +25,10 @@ const ChooseResolut = () => {
                     className="group-hover:animate-[spin_1s_linear_1] transform transition-all duration-700 ease-initial"
                   />
                 </div>
-                <p className="font-tertiary font-medium text-2xl text-primary-900 mt-2 md:text-center md:max-w-4/5">
+                <p className="font-medium text-2xl text-primary-900 mt-2 md:text-center md:max-w-4/5">
                   {card.title}
                 </p>
-                <p className="font-tertiary text-base text-feminine-gray mt-2 md:max-w-4/5 text-center">
+                <p className="text-base text-feminine-gray mt-2 md:max-w-4/5 text-center">
                   {card.description}
                 </p>
               </div>

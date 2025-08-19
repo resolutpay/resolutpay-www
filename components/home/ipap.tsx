@@ -17,7 +17,7 @@ const Ipap = () => {
         <h4 className="md:mt-10 mt-5 font-canaro-local font-medium text-xl sm:text-4xl md:text-4xl lg:text-6xl leading-normal sm:leading-[65px] -tracking-[2px] text-white sm:max-w-3/5">
           Insurance Product Aggregator Platform
         </h4>
-        <p className="mt-6 font-sans text-black-100 md:max-w-2/4 opacity-60">
+        <p className="mt-6 text-black-100 md:max-w-2/4 opacity-60">
           You have the freedom to personalize the design of your credit card,
           ensuring a truly unique experience that makes you feel extraordinary
         </p>

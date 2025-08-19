@@ -78,7 +78,7 @@ const NavBar = () => {
       <ul className="flex gap-10 font-bold text-primary-900">
         {navItems.map((item, index) => (
           <li key={index}>
-            <Link href={item.path} className="hover:font-extrabold">
+            <Link href={item.path} className="hover:text-primary-900/70">
               {item.title}
             </Link>
           </li>
@@ -137,23 +137,15 @@ const Header = () => {
             {/* Sign In Button */}
             <Button
               asChild
-              className="px-5 hidden lg:flex shadow-none text-base font-extrabold"
+              className="px-5 hidden lg:flex shadow-none text-base font-extrabold text-primary-900 hover:bg-transparent hover:text-primary-900/70"
             >
-              <Link
-                href="/sign-in"
-                className="relative overflow-hidden text-primary-900 border-2 border-transparent rounded-lg group transition-all duration-300 hover:rounded-4xl hover:border-primary-900 dark:bg-white"
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-violet-500 to-primary-900 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out"></div>
-                <span className="text-primary-900 font-extrabold relative z-10 group-hover:text-white transition-colors duration-500 ease-initial">
-                  Login
-                </span>
-              </Link>
+              <Link href="/sign-in">Login</Link>
             </Button>
 
             {/* SignUP Button */}
             <Button
               asChild
-              className="px-7 py-3.5 hidden lg:flex bg-black-100 text-primary-900 font-extrabold rounded-4xl mr-2 hover:right-2 hover:rounded-4xl transition-all duration-700 hover:bg-primary-color hover:text-white hover:animate-bounce"
+              className="px-7 py-3.5 hidden lg:flex bg-black-100 text-primary-900 font-extrabold rounded-4xl mr-2 hover:bg-black-200"
             >
               <Link href="/sign-up">Get Started</Link>
             </Button>

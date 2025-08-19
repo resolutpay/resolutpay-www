@@ -73,7 +73,7 @@ const GetInTouch = () => {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>
-                    <p className="font-auxilary sm:text-xl sm:leading-[31.1px] text-form-grey">
+                    <p className="sm:text-xl sm:leading-[31.1px] text-form-grey">
                       {domain.label}
                       <span className="text-asterik-red sm:text-2xl sm:leading-[40px] sm:mb-7 pl-1 sm:pl-0">
                         *
@@ -84,7 +84,7 @@ const GetInTouch = () => {
                     {domain.input ? (
                       <Input
                         {...field}
-                        className="border-0 rounded-none border-b-[1.5px] border-b-form-grey shadow-none font-auxilary md:text-xl md:leading-[31.1px] text-sm sm:text-base"
+                        className="border-0 rounded-none border-b-[1.5px] border-b-form-grey shadow-none md:text-xl md:leading-[31.1px] text-sm sm:text-base"
                       />
                     ) : (
                       <Textarea
@@ -94,7 +94,7 @@ const GetInTouch = () => {
                     )}
                   </FormControl>
                   {/* <FormDescription/> */}
-                  <FormMessage className="font-auxilary font-medium" />
+                  <FormMessage className="font-medium" />
                 </FormItem>
               )}
             />
@@ -102,7 +102,7 @@ const GetInTouch = () => {
         })}
         <Button
           type="submit"
-          className="w-full rounded-md text-base sm:rounded-none max-w-52 enabled:bg-gradient-to-r from-[#2A7B9B] via-[#57C75D] to-[#18DEC7] disabled:bg-black disabled:text-white py-3 sm:px-6 sm:py-[18px] font-auxilary font-bold text-cyan-900 sm:text-2xl disabled:font-medium lg:mt-10 hover:scale-90 transition-transform transform duration-500 ease-in-out"
+          className="w-full rounded-md text-base sm:rounded-none max-w-52 enabled:bg-gradient-to-r from-[#2A7B9B] via-[#57C75D] to-[#18DEC7] disabled:bg-black disabled:text-white py-3 sm:px-6 sm:py-[18px] font-bold text-cyan-900 sm:text-2xl disabled:font-medium lg:mt-10 hover:scale-90 transition-transform transform duration-500 ease-in-out"
           disabled={!isValid || isSubmitting}
         >
           Send message

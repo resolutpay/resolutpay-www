@@ -93,7 +93,7 @@ const Footer = () => {
       </WidthConstraint>
 
       <WidthConstraint className="mt-12 px-5 pb-10">
-        <p className="font-auxilary text-sm leading-[21px] text-primary-900 text-center">
+        <p className="text-sm leading-[21px] text-primary-900 text-center">
           &copy; {new Date().getFullYear()} Resolut Business Solutions All
           Rights Reserved
         </p>

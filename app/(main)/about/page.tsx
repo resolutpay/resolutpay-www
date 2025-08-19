@@ -78,13 +78,13 @@ const About = () => {
                       className="rounded-full w-full object-cover"
                     /> */}
                   </div>
-                  <h5 className="mt-6 font-tertiary font-medium text-2xl text-center text-primary-900">
+                  <h5 className="mt-6 font-medium text-2xl text-center text-primary-900">
                     {person.name}
                   </h5>
                   <div className="mx-auto w-fit mt-2.5 ">
                     <Link
                       href={person.portfolio}
-                      className="font-tertiary text-xl text-center text-feminine-gray"
+                      className="text-xl text-center text-feminine-gray"
                     >
                       Portfolio
                     </Link>

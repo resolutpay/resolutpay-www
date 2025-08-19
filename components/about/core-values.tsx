@@ -27,7 +27,7 @@ export default function Rithm() {
           {/* FlexIndicator Button */}
           <Button
             onClick={() => toggleValue(value.id)}
-            className={`w-full font-secondary font-extrabold text-xl leading-[30px] justify-start items-center pl-6 py-6 rounded-[12px] shadow-none transition-all duration-1000 ease-initial ${
+            className={`w-full font-extrabold text-xl leading-[30px] justify-start items-center pl-6 py-6 rounded-[12px] shadow-none transition-all duration-1000 ease-initial ${
               activeIndex === value.id
                 ? "bg-primary-100 text-primary-900  hover:bg-primary-100"
                 : "bg-transparent text-primary-100 hover:rotate-3 hover:bg-transparent"
