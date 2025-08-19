@@ -36,8 +36,7 @@ const CreateAccount = () => {
       isDeveloper: "yes",
     },
   });
-  const { isValid, isSubmitting, isSubmitSuccessful, errors } =
-    createAccountForm.formState;
+  const { isValid, isSubmitting } = createAccountForm.formState;
   // Submit Handler
   function onSubmit(values: z.infer<typeof createAccountSchema>) {}
   return (

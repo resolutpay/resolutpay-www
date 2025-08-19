@@ -29,7 +29,9 @@ const GetInTouch = () => {
   });
   const { isValid, isSubmitting } = getInTouchForm.formState;
   // Submit Handler
-  function onSubmit(values: z.infer<typeof getInTouchFormSchema>) {}
+  function onSubmit(values: z.infer<typeof getInTouchFormSchema>) {
+    console.log(values);
+  }
   return (
     <Form {...getInTouchForm}>
       <form onSubmit={getInTouchForm.handleSubmit(onSubmit)} className="space-y-8">

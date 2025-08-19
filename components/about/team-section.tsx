@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const TeamSection = ({ teams }: { teams: any[] }) => {
+const TeamSection = ({ teams }: { teams: { name: string; portfolio: string }[] }) => {
   return (
     <section className="">
       <h1 className="font-bold text-5xl md:text-6xl lg:text-8xl text-center">Team</h1>

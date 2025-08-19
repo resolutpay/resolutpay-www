@@ -22,7 +22,9 @@ export default function OTPVerificationForm() {
     },
   });
 
-  function onSubmit(data: z.infer<typeof OTPFormSchema>) {}
+  function onSubmit(data: z.infer<typeof OTPFormSchema>) {
+    console.log(data);
+  }
 
   return (
     <section className="min-h-screen w-full sm:max-w-[362px] mx-auto md:mt-72 mt-20 sm:mt-40 px-3 sm:px-0">

@@ -25,7 +25,9 @@ const EmailUpdates = () => {
   });
 
   // Form Submit Handler
-  function onSubmit(values: z.infer<typeof emailFormSchema>) {}
+  function onSubmit(values: z.infer<typeof emailFormSchema>) {
+    console.log(values);
+  }
   return (
     <WidthConstraint>
       {/* LATEST UPDATE SECTION */}
