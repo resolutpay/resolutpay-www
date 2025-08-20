@@ -1,5 +1,3 @@
-import { RadioGroup } from "@/components/ui/radio-group";
-
 export interface CountryComboBoxProps {
   value?: string;
   onChange: (value: string) => void;
@@ -15,18 +13,6 @@ export interface PhoneInputProps {
   onChange: (value: PhoneValue) => void;
   onBlur?: () => void;
   name?: string;
-  className?: string;
-}
-
-export interface RadioOption {
-  value: string;
-  label: string;
-  description?: string;
-}
-
-export interface RadioGroupFieldProps
-  extends React.ComponentPropsWithoutRef<typeof RadioGroup> {
-  options: RadioOption[];
   className?: string;
 }
 
