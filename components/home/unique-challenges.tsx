@@ -11,9 +11,10 @@ const Solutions = () => {
             We understand that African face unique challenges
           </h3>
           <p className="text-xl md:text-2xl xl:text-3xl text-center">
-            From managing employee benefits to accessing fast, affordable financing. Our
-            mission is simple: deliver technology-driven solutions that help businesses
-            run smarter, pay faster, and retain their best people.
+            From managing employee benefits to accessing fast, affordable
+            financing. Our mission is simple: deliver technology-driven
+            solutions that help businesses run smarter, pay faster, and retain
+            their best people.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10">
@@ -21,12 +22,14 @@ const Solutions = () => {
             return (
               <div
                 key={index}
-                className="bg-primary-800 space-y-2 text-primary-100 flex flex-col justify-between rounded-3xl pt-10 sm:pt-16 overflow-hidden"
+                className="bg-primary-800 space-y-2 text-primary-100 flex flex-col justify-between rounded-3xl pt-10 sm:pt-16 overflow-hidden hover:scale-108 transition-all duration-600 ease-in-out hover:shadow-[4px_4px_7px_0px_rgba(0,0,0,0.49)] max-w-104 mx-auto last:md:col-span-2 last:lg:col-span-1"
               >
                 <p className="text-lg sm:text-xl lg:text-2xl text-white px-6">
                   {item.title}
                 </p>
-                <p className="sm:text-xl text-primary-100 px-6">{item.description}</p>
+                <p className="sm:text-xl text-primary-100 px-6">
+                  {item.description}
+                </p>
                 <Image
                   src={item.imageSrc}
                   alt={item.imageAlt}

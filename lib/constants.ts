@@ -3,7 +3,7 @@ import { FormDataType } from "./interface";
 export const navItems = [
   { title: "ABOUT", path: "/about" },
   { title: "PRODUCTS", path: "/products" },
-  { title: "DEVELOPERS", path: "/developers" },
+  { title: "DEVELOPERS", path: "https://docs.resolutpay.com" },
   { title: "SUPPORT", path: "/support" },
 ];
 
@@ -88,13 +88,15 @@ export const solution = [
   },
   {
     title: "SMEs",
-    description: "Solving technology gaps for smalland medium scale enterprises",
+    description:
+      "Solving technology gaps for smalland medium scale enterprises",
     imageSrc: "/assets/illustrations/star.svg",
     imageAlt: "Star",
   },
   {
     title: "Point of Sales",
-    description: "Pay with card or mobile money and get your order delivered in minutes",
+    description:
+      "Pay with card or mobile money and get your order delivered in minutes",
     imageSrc: "/assets/illustrations/light-bulb.svg",
     imageAlt: "Bulb",
   },
