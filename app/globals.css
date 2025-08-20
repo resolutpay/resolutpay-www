@@ -234,7 +234,7 @@
   animation: marquee-reverse 40s linear infinite;
 }
 
-/* FAQ Accordion */
+/*Accordions Keyframes*/
 @keyframes accordion-down {
   from {
     height: 0;
@@ -256,7 +256,7 @@
     opacity: 0;
   }
 }
-
+/* Accordions Trigger Icon */
 .hide-accordion-chevron > svg {
   display: none;
 }

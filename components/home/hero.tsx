@@ -29,14 +29,12 @@ const Hero = () => {
           </Button>
         </div>
         <div className="mt-12">
-          <Link href={""}>
-            <Image
-              src="/assets/pci-insight.svg"
-              alt="Security standards"
-              width={200}
-              height={100}
-            />
-          </Link>
+          <Image
+            src="/assets/pci-insight.svg"
+            alt="Security standards"
+            width={200}
+            height={100}
+          />
         </div>
       </WidthConstraint>
     </section>

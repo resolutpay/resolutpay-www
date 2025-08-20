@@ -11,13 +11,13 @@ import {
 
 export default function CoreValues() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 w-full">
+    <div className="grid grid-cols-1 lg:grid-cols-2 items-start gap-10 w-full">
       <Accordion type="single" collapsible className="space-y-4">
         {coreValues.map((value) => (
           <AccordionItem
             key={value.id}
             value={`value-${value.id}`}
-            className="relative rounded-lg transition-all duration-300 ease-in-out border-0 data-[state=open]:bg-white/20 backdrop-blur-sm"
+            className="relative rounded-lg border-0 data-[state=open]:bg-white/20 backdrop-blur-sm hide-accordion-chevron"
           >
             <AccordionTrigger className="w-full justify-start items-center px-6 py-4 rounded-lg shadow-none transition-all duration-300 ease-in-out bg-transparent text-primary-100 hover:bg-white/5 data-[state=open]:bg-[#D2FFFC] data-[state=open]:text-[#063972] group hide-accordion-chevron">
               <div className="flex items-center w-full">
@@ -27,7 +27,9 @@ export default function CoreValues() {
                     className="transition-all duration-300 ease-in-out text-primary-color group-data-[state=open]:text-white"
                   />
                 </div>
-                <span className="ml-4 text-xl font-semibold">{value.title}</span>
+                <span className="ml-4 text-xl font-semibold">
+                  {value.title}
+                </span>
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-4 pt-2">
