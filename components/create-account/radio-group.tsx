@@ -18,22 +18,27 @@ export const RadioGroupField = React.forwardRef<
       ref={ref}
       value={value}
       onValueChange={onChange}
-      className={cn("space-y-4 text-[#57584E]", className)}
+      className={cn("space-y-4 text-[#57584E] w-full max-w-full", className)}
       {...props}
     >
       {options.map((opt) => (
-        <div key={opt.value} className="flex items-start space-x-3">
+        <div
+          key={opt.value}
+          className="flex items-start space-x-3 w-full max-w-full min-w-0"
+        >
           <RadioGroupItem
             value={opt.value}
             id={opt.value}
-            className=" border-primary-color size-3 data-[state=checked]:text-primary-color "
+            className="border-primary-color size-3 data-[state=checked]:text-primary-color flex-shrink-0 mt-1"
           ></RadioGroupItem>
-          <div className="grid gap-1 leading-none">
-            <Label htmlFor={opt.value} className="font-semibold">
+          <div className="grid gap-1 leading-none flex-1 min-w-0 max-w-full">
+            <Label htmlFor={opt.value} className="font-semibold break-words">
               {opt.label}
             </Label>
             {opt.description && (
-              <p className="text-sm text-muted-foreground">{opt.description}</p>
+              <p className="text-sm text-muted-foreground break-words whitespace-normal overflow-wrap-anywhere">
+                {opt.description}
+              </p>
             )}
           </div>
         </div>
