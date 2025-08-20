@@ -27,8 +27,12 @@ const FlexItem = ({
         />
       </div>
       <div className="w-full lg:w-[50%] space-y-5">
-        <h1 className="font-bold text-5xl md:text-6xl lg:text-8xl">{title}</h1>
-        <p className=" text-xl xl:text-2xl text-center sm:text-left">{description}</p>
+        <h1 className="font-bold text-5xl md:text-6xl lg:text-8xl text-center md:text-left">
+          {title}
+        </h1>
+        <p className=" text-xl xl:text-2xl text-center sm:text-left">
+          {description}
+        </p>
       </div>
     </div>
   );

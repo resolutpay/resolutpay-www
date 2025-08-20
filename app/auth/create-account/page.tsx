@@ -2,7 +2,7 @@
 import CountryComboBox from "@/components/create-account/combo-box";
 import { PasswordInput } from "@/components/create-account/password-input";
 import { PhoneInput } from "@/components/create-account/phone-input";
-import { RadioGroupField } from "@/components/create-account/radio-group";
+import { CustomRadioGroupField } from "@/components/create-account/radio-group-local";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -13,7 +13,11 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { businessTypeOptions, developerOptions, formData } from "@/lib/constants";
+import {
+  businessTypeOptions,
+  developerOptions,
+  formData,
+} from "@/lib/constants";
 import { createAccountSchema } from "@/lib/schemas";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Link from "next/link";
@@ -43,7 +47,7 @@ const CreateAccount = () => {
     <Form {...createAccountForm}>
       <form
         onSubmit={createAccountForm.handleSubmit(onSubmit)}
-        className="mx-auto w-11/12 lg:max-w-[400px] my-24 space-y-5"
+        className="mx-auto w-11/12 lg:max-w-[400px] pt-24 bg-white overflow-hidden pb-24 space-y-8 break-words"
       >
         {formData.map((domain, index) => (
           <FormField
@@ -52,7 +56,7 @@ const CreateAccount = () => {
             name={domain.id}
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="font-semibold text-sm text-[#57584E] mb-1 flex justify-between">
+                <FormLabel className="font-semibold text-sm text-[#57584E] pb-1 flex justify-between">
                   {domain.label}{" "}
                   {domain.id === "country" ? (
                     <Link href={""} className="text-[#3676C8]">
@@ -68,7 +72,7 @@ const CreateAccount = () => {
                       {...field}
                       value={field.value as string}
                       onChange={field.onChange}
-                      className="rounded-[5px] h-10 font-inter"
+                      className="rounded-[5px] h-10"
                     />
                   )}
                 </FormControl>
@@ -78,7 +82,7 @@ const CreateAccount = () => {
                       {...field}
                       value={field.value as string}
                       onChange={(e) => field.onChange(e.target.value)}
-                      className="rounded-[5px] h-10 font-inter"
+                      className="rounded-[5px] h-10"
                     />
                   )}
                 </FormControl>
@@ -94,30 +98,34 @@ const CreateAccount = () => {
                   {domain.type === "phone" && (
                     <PhoneInput
                       {...field}
-                      value={field.value as { countryCode: string; number: string }}
+                      value={
+                        field.value as { countryCode: string; number: string }
+                      }
                       onChange={field.onChange}
                     />
                   )}
                 </FormControl>
                 <FormControl>
                   {domain.type === "business" && (
-                    <RadioGroupField
+                    <CustomRadioGroupField
                       {...field}
                       value={field.value as string}
                       onChange={(val) => field.onChange(val)}
                       options={businessTypeOptions}
-                      className={`text-[#57584E] pt-5 mb-2`}
+                      name="businessType"
+                      className="text-[#57584E] pt-5 mb-2"
                     />
                   )}
                 </FormControl>
                 <FormControl>
                   {domain.type === "developer" && (
-                    <RadioGroupField
+                    <CustomRadioGroupField
                       {...field}
                       value={field.value as string}
                       onChange={(val) => field.onChange(val)}
                       options={developerOptions}
-                      className="flex space-x-6"
+                      name="isDeveloper"
+                      className=""
                     />
                   )}
                 </FormControl>
@@ -127,19 +135,24 @@ const CreateAccount = () => {
           />
         ))}
 
-        <Button type="submit" disabled={!isValid || isSubmitting} className="w-full">
+        <Button
+          type="submit"
+          disabled={!isValid || isSubmitting}
+          className="w-full"
+        >
           Create my account
         </Button>
-        <div className="w-full mt-3.5 text-xs text-[#57584E] px-2 font-inter">
+        <div className="w-full pt-3.5 text-xs text-[#57584E] px-2">
           <p>
-            By clicking the “Create your account” button, you agree to Resolut&apos;s{" "}
+            By clicking the “Create your account” button, you agree to
+            Resolut&apos;s{" "}
             <Link href={""} className="text-[#4576C2]">
               terms of acceptable use and Data Processing Agreement{" "}
             </Link>
           </p>
-          <p className="mt-5">
-            To learn more about how Resolut collects, uses and discloses your personal
-            data, please read our{" "}
+          <p className="pt-5">
+            To learn more about how Resolut collects, uses and discloses your
+            personal data, please read our{" "}
             <Link href={""} className="text-[#3676C8]">
               privacy policy
             </Link>

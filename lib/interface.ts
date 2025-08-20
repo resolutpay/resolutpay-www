@@ -52,3 +52,15 @@ export type FormDataType = {
   label: string;
   type: FormInputType;
 };
+export interface RadioOption {
+  value: string;
+  label: string;
+  description?: string;
+}
+export interface CustomRadioGroupFieldProps {
+  options: RadioOption[];
+  value?: string;
+  onChange?: (value: string) => void;
+  className?: string;
+  name?: string;
+}
